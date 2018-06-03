@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;apptheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="privacyanalyzer_ui_components:privacyanalyzer.ui.components">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="storefront" spacing="false" size-full margin="false">
+   <vaadin-panel style-name="borderless" _id="searchPanel">
+    <vaadin-horizontal-layout spacing="false" width-full margin-left margin-right margin-top>
+     <vaadin-css-layout style-name="list-filters" width-full :expand>
+      <vaadin-text-field id="searchField" placeholder="Search" width="300px" _id="searchField"></vaadin-text-field>
+      <vaadin-radio-button-group description="Search by app name or by sha256 hash" data-item-type="java.lang.String" _id="searchOptions">
+       <option item="name" selected>Search by Name</option>
+       <option item="sha">Search by SHA256</option>
+      </vaadin-radio-button-group>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e805" id="searchButton" plain-text _id="searchButton"></vaadin-button>
+     </vaadin-css-layout>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="friendly" plain-text _id="analyzeApk">
+       Analyze new APK 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-panel>
+   <privacyanalyzer_ui_components-apks-grid id="list" size-full _id="list" :expand></privacyanalyzer_ui_components-apks-grid>
+  </vaadin-vertical-layout>
+ </body>
+</html>

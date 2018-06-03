@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;apptheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="privacyanalyzer_ui_view_dashboard:privacyanalyzer.ui.view.dashboard">
+ </head>
+ <body>
+  <vaadin-vertical-layout responsive>
+   <vaadin-label plain-text _id="title" :center>
+     Analyze an Android application for potential privacy breaches (Max allowed file size is 30MB). 
+   </vaadin-label>
+   <vaadin-upload button-caption="Upload APK" responsive max-file-size="23886080" accept="*.apk" _id="upload" :center></vaadin-upload>
+   <vaadin-progress-bar width="135px" height="20px" _id="progressBar" :center></vaadin-progress-bar>
+  </vaadin-vertical-layout>
+ </body>
+</html>

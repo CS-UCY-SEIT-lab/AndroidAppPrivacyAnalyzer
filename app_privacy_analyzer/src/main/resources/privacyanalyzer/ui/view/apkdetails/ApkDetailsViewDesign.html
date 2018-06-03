@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;apptheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" margin="false">
+   <vaadin-css-layout width-full>
+    <vaadin-horizontal-layout width-full margin>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e622" style-name="friendly" plain-text _id="backButton">
+       Back to list 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="friendly" plain-text _id="analyzeApk" :right>
+       Analyze new APK 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width="90%">
+     <vaadin-vertical-layout style-name="myprogressbar" spacing="false">
+      <vaadin-horizontal-layout width-full :center>
+       <vaadin-label style-name="bold huge" plain-text _id="appNameLabel" :center>
+         App Name 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-horizontal-layout width-full :center>
+       <vaadin-label style-name="small" plain-text :right>
+         Analyzed at: 
+       </vaadin-label>
+       <vaadin-label style-name="small" plain-text _id="dateLabel">
+         date 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-horizontal-layout width-full>
+       <vaadin-label style-name="small" plain-text :right>
+         Added by: 
+       </vaadin-label>
+       <vaadin-label style-name="small" plain-text _id="userLabel">
+         user 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-vertical-layout margin="false" :center>
+       <vaadin-image caption-as-html caption="<div id=&quot;logo&quot;></div>" width="100px" height="100px" _id="image" :center></vaadin-image>
+       <vaadin-label plain-text _id="statusLabel" :center>
+         Status: Analyzing APK... 
+       </vaadin-label>
+       <vaadin-progress-bar caption-as-html caption="<center>APK risk score: 99.99/100</center>" primary-style-name="greenpbar" width="85%" _id="scoreBar" :center></vaadin-progress-bar>
+       <vaadin-label caption="Results by VirusTotal.com:" responsive _id="virusTotalLabel" :center>
+         text 
+       </vaadin-label>
+       <vaadin-label primary-style-name="vitustotallabelgreen" width="86px" height="44px" plain-text _id="virusTotalNumberLabel" :center>
+         66/66 
+       </vaadin-label>
+      </vaadin-vertical-layout>
+     </vaadin-vertical-layout>
+     <vaadin-vertical-layout margin="false">
+      <vaadin-vertical-layout spacing="false" :center>
+       <vaadin-css-layout style-name="order-form responsive" width-full>
+        <vaadin-label style-name="header" width-full plain-text>
+          SHA256: 
+        </vaadin-label>
+       </vaadin-css-layout>
+       <vaadin-label height="26px" plain-text _id="sha256">
+         SHA256: 
+       </vaadin-label>
+       <vaadin-css-layout style-name="order-form responsive" width-full>
+        <vaadin-label style-name="header" width-full plain-text>
+          Package Information: 
+        </vaadin-label>
+       </vaadin-css-layout>
+       <vaadin-label plain-text _id="packageName">
+         package name 
+       </vaadin-label>
+       <vaadin-label height="26px" plain-text _id="packageVersionName">
+         Package Version Name: 
+       </vaadin-label>
+       <vaadin-label height="26px" plain-text _id="packageVersionCode">
+         Package Version Code: 
+       </vaadin-label>
+       <vaadin-css-layout style-name="order-form responsive" width-full>
+        <vaadin-label style-name="header" width-full plain-text>
+          SDK Information: 
+        </vaadin-label>
+       </vaadin-css-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-label height="26px" plain-text _id="minSDK">
+          Minimum SDK: 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-label height="26px" plain-text _id="targetSDK">
+         Target SDK: 
+       </vaadin-label>
+       <vaadin-css-layout style-name="order-form responsive" width-full>
+        <vaadin-label style-name="header" width-full plain-text>
+          Other Information: 
+        </vaadin-label>
+       </vaadin-css-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-check-box caption="ADB Backup" description="ADB Backup is a good tool for backing up all of your files. If it's open for this app, people who have your phone can copy all of the sensitive data for this app in your phone. The sensitive data may include lifetime access token, username or password, etc." readonly _id="adbCheckBox"></vaadin-check-box>
+       </vaadin-horizontal-layout>
+       <vaadin-check-box caption="Debuggable" description="This is very dangerous. The attackers will be able to sniffer the debug messages by Logcat." readonly _id="debugCheckBox"></vaadin-check-box>
+      </vaadin-vertical-layout>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+    <vaadin-vertical-layout responsive margin="false">
+     <vaadin-grid caption="Permissions declared in apk" responsive width="90%" height="200px" selection-mode="none" _id="declaredPermissionsGrid" :center></vaadin-grid>
+     <vaadin-grid caption="Permissions not declared but used in apk" responsive width="90%" height="200px" selection-mode="none" _id="notDeclaredButUsedPermissionsGrid" :center></vaadin-grid>
+     <vaadin-grid caption="Permissions declared and used in apk" responsive width="90%" height="200px" selection-mode="none" _id="declaredAndUsedPermissionsGrid1" :center></vaadin-grid>
+     <vaadin-grid caption="Permissions declared and not used in apk" responsive width="90%" height="200px" selection-mode="none" _id="declaredAndNotUsedPermissionsGrid11" :center></vaadin-grid>
+     <vaadin-grid caption="Identified Permissions used by Libraries" responsive width="90%" height="200px" selection-mode="none" _id="libraryPermissions" :center></vaadin-grid>
+     <vaadin-grid caption="Identified Permission calls" responsive width="90%" height="200px" selection-mode="none" _id="callsGrid" :center></vaadin-grid>
+     <vaadin-grid caption="Known Trackers in APK" responsive width="90%" height="200px" selection-mode="none" _id="trackersGrid" :center></vaadin-grid>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   </vaadin-css-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

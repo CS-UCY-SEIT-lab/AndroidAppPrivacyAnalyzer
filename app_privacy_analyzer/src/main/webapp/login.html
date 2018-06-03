@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+Hint to Vaadin that if this page is ever sent back as response to a UIDL request, the user should be redirected.
+
+Vaadin-Refresh: context://login.html
+-->
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="VAADIN/myjs.js"></script>
+<title>App Privacy Analyzer</title>
+
+<link rel="shortcut icon" href="VAADIN/themes/apptheme/favico.ico" />
+
+<link rel="icon" sizes="192x192"
+	href="VAADIN/themes/apptheme/AndroidIcon.png">
+<link rel="icon" sizes="96x96"
+	href="VAADIN/themes/apptheme/AndroidIcon.png">
+
+<link rel="apple-touch-icon" sizes="192x192"
+	href="VAADIN/themes/apptheme/AndroidIcon.png">
+<link rel="apple-touch-icon" sizes="96x96"
+	href="VAADIN/themes/apptheme/AndroidIcon.png">
+
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,user-scalable=no">
+
+<!-- Enable these to hide browser controls when app is started from homescreen:
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  -->
+
+<script type="text/javascript">
+	var init = function() {
+		if (window.location.hash) {
+			document.getElementById("theform").action += window.location.hash;
+			document.getElementById("modal-content").action+= window.location.hash;
+		}
+		if (window.location.search.indexOf("error") > 0) {
+			document.body.className = "error";
+		}
+		
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal 
+		btn.onclick = function() {
+			
+		    modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		    modal.style.display = "none";
+		}
+		
+	}
+	
+	
+	function validateForm() {
+	    var x = document.forms["signInForm"]["username"].value;
+	   // if (x == "") {
+		    var re = /\S+@\S+\.\S+/;
+    	 var g = re.test(String(x).toLowerCase());
+	        
+    	 if (g==false) alert("Please enter a valid email address")
+	       return g;
+	    //}
+	}
+	
+</script>
+<style>
+@font-face {
+	font-family: "Open Sans";
+	src: url(VAADIN/themes/valo/fonts/open-sans/OpenSans-Light-webfont.woff)
+		format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src:
+		url(VAADIN/themes/valo/fonts/open-sans/OpenSans-Semibold-webfont.woff)
+		format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+html {
+	background: linear-gradient(145deg, #484962 30%, #d06b41 100%);
+}
+
+@media ( min-width : 1000px) {
+	/* load on wide screens */
+	body {
+		background-color: transparent;
+		background-image: url(VAADIN/themes/apptheme/bg.jpg);
+		background-size: cover;
+	}
+}
+
+button {
+	background-color: #4b4b65;
+}
+
+#logo {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-image: url(VAADIN/themes/apptheme/AndroidIcon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, .2);
+}
+
+/* Layout */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font: 100 16px/1.55 "Open Sans", sans-serif;
+	margin: 0;
+}
+
+#info {
+	color: #fff;
+	text-align: center;
+	padding: 28px;
+}
+
+#form {
+	height: 100%;
+	display: flex;
+	background-color: #fff;
+	justify-content: center;
+}
+
+/* Responsive behaviour */
+@media ( max-width : 1000px) {
+	h2 {
+		display: none;
+	}
+}
+
+@media ( min-width : 1001px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#logo {
+		width: 96px;
+		height: 96px;
+	}
+	#info, #form {
+		height: 450px;
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+	}
+	#info {
+		background-color: rgba(255, 255, 255, .2);
+		width: 465px;
+		border-radius: 5px 0 0 5px;
+	}
+	#form {
+		width: 320px;
+		padding: 28px;
+		border-radius: 0 5px 5px 0;
+	}
+}
+
+/* Elements / components theme */
+h1 {
+	font-size: 36px;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom: 14px;
+}
+
+form {
+	/*max-width: 320px;*/
+}
+
+label {
+	font-size: 14px;
+	padding: 16px 0 5px 0;
+	display: inline-block;
+}
+
+input[type='text'], input[type='password'] {
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	font: inherit;
+	font-size: 14px;
+	height: 37px;
+	border-radius: 4px;
+	padding: 4px 9px;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+button {
+	width: 100%;
+	margin-top: 37px;
+	height: 37px;
+	border: 1px solid #666;
+	border-radius: 4px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 2%,
+		rgba(0, 0, 0, 0.1) 98%);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0
+		rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	font: inherit;
+	font-weight: 600;
+}
+
+#button-submit:focus:after {
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, .5);
+	content: "";
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	bottom: -2px;
+	left: -2px;
+	border-radius: inherit;
+}
+
+.error .inputx {
+	display: block;
+	border-color: red;
+}
+
+.ignore-css {
+	all: unset;
+}
+
+.error .theformx:after {
+	content:
+		"The email and password you entered do not match our records. Please double-check and try again.";
+	display: block;
+	border: 1px solid red;
+	border-radius: 4px;
+	width: 100%;
+	margin-top: 16px;
+	font-size: 14px;
+	padding: 8px;
+}
+
+.myerrorclass {
+	/*content:
+		"The username and password you entered do not match our records. Please double-check and try again.";*/
+	display: block;
+	border: 1px solid red;
+	border-radius: 4px;
+	width: 100%;
+	margin-top: 16px;
+	font-size: 14px;
+	padding: 8px;
+}
+
+.mysuccessclass {
+	/*content:
+		"The username and password you entered do not match our records. Please double-check and try again.";*/
+	display: block;
+	border: 1px solid green;
+	border-radius: 4px;
+	width: 100%;
+	margin-top: 16px;
+	font-size: 14px;
+	padding: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+	
+    display: none; /* Hidden by default */
+    
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /**background-color: rgb(0,0,0); /* Fallback color */
+    /**background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+</style>
+</head>
+<body onload="init()">
+	<div id="info">
+		<div id="logo"></div>
+		<h1>App Privacy Analyzer</h1>
+
+		<div class="ignore-css">
+			<form class="ignore-css" method="post" action="login" >
+				<input class="ignore-css" type="hidden" id="loging" name="username" value="guest">
+				<input class="ignore-css" type="hidden" id="passwordg" name="password" value="guest">
+				<button type="submit">Continue as Guest</button>
+			</form>
+			
+			<button type="submit" id="myBtn" data-toggle="modal" data-target="#myModal"
+                data-backdrop="static" data-keyboard="false">Register</button>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+  			<!-- Modal content -->
+  			<div class="modal-content">
+   			 <span class="close">&times;</span>
+    		<form id="modal-content" class="modal-content" >
+    <div class="container">
+      <h1 class="ignore-css" style="color:black">Register</h1>
+      <hr>
+      <div style="text-align:left" id="reg_form" >
+      <div id='message' style='color:black;display:none;' class='mysuccessclass'> 
+      <h2 style='color:green'>User Created!</h2>
+      <p style='color:green'>You can close this window and sign in.</p>
+      
+      </div>
+      <label class="ignore-css" for="email"  style="color:black;"><b>Email:</b></label>
+      <input id="email" type="text" placeholder="Enter email" name="email" required class="input">
+		
+      <label class="ignore-css" for="name" style="color:black"><b>Username:</b></label>
+      <input id="name" type="text" placeholder="Enter username" name="name" required class="input">
+
+      <label class="ignore-css" for="password1" style="color:black"><b>Password:</b></label>
+      <input id="password1" type="password" placeholder="Enter password" name="password1" required class="input">
+      
+      <label class="ignore-css" for="password2" style="color:black"><b>Confirm Password:</b></label>
+      <input id="password2" type="password" placeholder="Re-enter password" name="password2" required class="input" >
+      
+      
+		<div id='messageError' style='color:red;display:none;' class='myerrorclass'>
+		<p style='color:red' id='errorMsgAccount'></p>
+		
+		</div>
+
+      <div class="clearfix">
+       <button type="submit" class="mybuttonx" id='regx'>Register</button>
+        <button type="button" onclick="document.getElementById('myModal').style.display='none'" class="cancelbtn">Cancel</button>
+       
+      </div>
+      </div>
+    </div>
+  </form>
+
+  			</div>
+
+</div>
+		</div>
+	</div>
+	<div id="form">
+
+		<form  method="post" action="login" id="theform" class='theformx' name="signInForm" onsubmit="return validateForm()">
+			<h2>Sign in</h2>
+			<label id="login-label" for="login">Email</label> <input type="text"
+				id="login" name="username" aria-labelledby="login-label" autofocus class='inputx'>
+			<label id="password-label" for="password">Password</label> <input
+				type="password" id="password" name="password"
+				aria-labelledby="password-label" class='inputx'>
+			<button id="button-submit" type="submit" class="loginbutton">Sign in</button>
+
+		</form>
+
+
+	</div>
+
+
+</body>
+</html>
