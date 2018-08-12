@@ -18,4 +18,6 @@ public interface ApkTrackerAssociationRepository extends JpaRepository<ApkTracke
 	List<Tracker> findAllTrackersByApkModel(ApkModel apkmodel);
 	
 	List<ApkTrackerAssociation> findByApk(ApkModel apk);
+	
+	List<ApkTrackerAssociation> findByApkAndTracker(ApkModel apk,Tracker tracker);
 }

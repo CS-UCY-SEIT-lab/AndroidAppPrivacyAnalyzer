@@ -138,7 +138,8 @@ public class DataGenerator implements HasLogger {
 		defaultVariables.setOrangRisk(70);
 		defaultVariables.setRedRisk(100);
 		defaultVariables.setYellowRisk(40);
-
+		defaultVariables.setVirusTotalScore(20);
+		defaultVariables.setVirusTotalThreshold(0.3);
 		variablesRepository.save(defaultVariables);
 
 	}

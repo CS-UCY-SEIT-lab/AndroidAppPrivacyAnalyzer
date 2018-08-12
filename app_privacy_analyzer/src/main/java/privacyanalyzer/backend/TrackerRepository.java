@@ -10,4 +10,7 @@ public interface TrackerRepository extends JpaRepository<Tracker, Long> {
 
 	
 	List<Tracker> findAll();
+	
+	
+	Tracker findById(Long id);
 }

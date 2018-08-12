@@ -260,8 +260,24 @@ public class AnalyzeService extends APKAnalyzer implements Serializable {
 		if (apkmodel.isMalware())
 			score += variableService.getVariables().getMalwareScore();
 
+		try {
+			VirusTotalReportResponse report=getVirusTotalReport(apkmodel.getSha256());
+			double virusTotalResults=(double)report.getPositives()/(double)report.getTotal();
+			if (virusTotalResults>=variableService.getVariables().getVirusTotalThreshold()) {
+				score+=variableService.getVariables().getVirusTotalScore();
+			}
+		} catch (ClientProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		if (score >= variableService.getVariables().getMaximumRiskScore())
 			score = (float) variableService.getVariables().getMaximumRiskScore();
+		
+		
 		return score;
 	}
 

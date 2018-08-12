@@ -46,7 +46,7 @@ import privacyanalyzer.backend.data.entity.Permission;
 import privacyanalyzer.backend.service.ApkService;
 
 import privacyanalyzer.backend.service.PermissionService;
-
+import privacyanalyzer.backend.service.TrackerService;
 import privacyanalyzer.ui.navigation.NavigationManager;
 
 
@@ -69,7 +69,7 @@ public class DashboardView extends DashboardViewDesign implements View {
 	private final BoardLabel totalAPKlabel = new BoardLabel("APKs analyzed", "3/7", "today");
 	private final BoardLabel DangerousAPKslabel = new BoardLabel("Dangerous APKs found", "1", "na");
 	private final BoardBox notAvailableBox = new BoardBox(DangerousAPKslabel);
-	private final BoardLabel addedTodayLabel = new BoardLabel("Added Today", "2", "new");
+	private final BoardLabel addedTodayLabel = new BoardLabel("Average APK Score", "2", "new");
 	private final BoardLabel DangerousPermissionlabel = new BoardLabel("Most Used Dangerous Permission", "1", "na");
 
 
@@ -84,12 +84,15 @@ public class DashboardView extends DashboardViewDesign implements View {
 	
 	private final ApkService apkService;
 	private final PermissionService permissionService;
+	private final TrackerService trackerService;
+	
 	@Autowired
-	public DashboardView(PermissionService permissionService,ApkService apkService) {
+	public DashboardView(PermissionService permissionService,ApkService apkService,TrackerService trackerService) {
 
 		
 		this.apkService=apkService;
 		this.permissionService=permissionService;
+		this.trackerService=trackerService;
 	}
 
 	
@@ -104,6 +107,7 @@ public class DashboardView extends DashboardViewDesign implements View {
 	Component mostusedbar,dangerousbar;
 	@PostConstruct
 	public void init() {
+
 		
 		mostusedbar =new BasicBar(permissionService.getApkPermissionAssociationRepository().findTopUsedPermissions(new PageRequest(0, 5)),"5 Most Used IDENTIFIED permissions").getChart();
 		dangerousbar =new BasicBar(permissionService.getApkPermissionAssociationRepository().findTopUsedDangerousPermissions(new PageRequest(0,5)),"5 Most Used IDENTIFIED  dangerous permissions").getChart();
@@ -208,7 +212,7 @@ public class DashboardView extends DashboardViewDesign implements View {
 	
 	
 	private void refreshPermissionOverallPie(List<Object[]> data) {
-		permissionOverallChart.getConfiguration().setTitle("How permission are used (overall)");
+		permissionOverallChart.getConfiguration().setTitle("How permissions are used (overall)");
 		permissionTypeUsagePieData= new DataSeries("Percentage (%)");
 		int sum=0;
 		for (Object[] temp:data) {
@@ -262,7 +266,9 @@ public class DashboardView extends DashboardViewDesign implements View {
 		totalAPKlabel.setContent(Long.toString(apkService.getRepository().count()));
 		DangerousAPKslabel.setContent(Long.toString(apkService.getRepository().findDangerousApk()));
 		
-		addedTodayLabel.setContent(Integer.toString(apkService.getRepository().findTodayAddedAPKs().size()));
+		
+		double avgScore=apkService.getRepository().getAverageScore();
+		addedTodayLabel.setContent(String.format("%.2f", avgScore));
 
 
 		Permission p=permissionService.getApkPermissionAssociationRepository().findTop10UsedDangerousPermissions(new PageRequest(0, 1)).get(0);

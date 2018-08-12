@@ -29,6 +29,7 @@ public interface ApkRepository extends JpaRepository<ApkModel, Long> {
 	@Query("SELECT apk FROM ApkInfo apk WHERE DATE(apk.createdAt) = CURDATE()")
 	List<ApkModel> findTodayAddedAPKs();
 	
-	
+	@Query("SELECT AVG(apk.score) FROM ApkInfo apk")
+	float getAverageScore();
 	
 }

@@ -31,6 +31,8 @@ public class Variables extends MyAbstractEntity {
 	private double orangRisk;
 	private double redRisk;
 	
+	private double virusTotalScore;
+	private double virusTotalThreshold;
 	/**
 	 * 
 	 */
@@ -193,6 +195,22 @@ public class Variables extends MyAbstractEntity {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public double getVirusTotalScore() {
+		return virusTotalScore;
+	}
+
+	public void setVirusTotalScore(double virusTotalScore) {
+		this.virusTotalScore = virusTotalScore;
+	}
+
+	public double getVirusTotalThreshold() {
+		return virusTotalThreshold;
+	}
+
+	public void setVirusTotalThreshold(double virusTotalThreshold) {
+		this.virusTotalThreshold = virusTotalThreshold;
 	}
 
 }
