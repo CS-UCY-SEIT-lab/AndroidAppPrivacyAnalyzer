@@ -112,7 +112,8 @@ public class DashboardView extends DashboardViewDesign implements View {
 		mostusedbar =new BasicBar(permissionService.getApkPermissionAssociationRepository().findTopUsedPermissions(new PageRequest(0, 5)),"5 Most Used IDENTIFIED permissions").getChart();
 		dangerousbar =new BasicBar(permissionService.getApkPermissionAssociationRepository().findTopUsedDangerousPermissions(new PageRequest(0,5)),"5 Most Used IDENTIFIED  dangerous permissions").getChart();
 		
-
+		
+		
 
 		setResponsive(true);
 

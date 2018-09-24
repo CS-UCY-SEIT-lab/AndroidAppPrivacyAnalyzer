@@ -53,7 +53,7 @@ public class AnalyzeService extends APKAnalyzer implements Serializable {
 		this.trackerService = trackerService;
 		this.permissionCallsService = permissionCallsService;
 		this.variableService=variableService;
-		this.virusTotal= new VirusTotal("4a71f3d4c1ba14831e8edce8b32261d2f7f61757761e2e838e84ec911a018e37");
+		this.virusTotal= new VirusTotal("5c6997fab849efd8506bcba09de9943c2fc780998d570928eb18ccb9e62b4a3f");
 	}
 
 	public boolean predict(ArrayList<String> permissionList) {
@@ -174,10 +174,11 @@ public class AnalyzeService extends APKAnalyzer implements Serializable {
 
 			// save calls
 			apkService.save(apkmodel, current);
+			virusTotalThread.join();
 			apkmodel.setScore(calculateScore(apkmodel));
 			apkmodel.setAnalyzed(true);
 			apkService.save(apkmodel, current);
-			virusTotalThread.join();
+			
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

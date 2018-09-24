@@ -43,7 +43,7 @@ public class BasicBar extends AbstractVaadinChartExample {
         Chart chart = new Chart(ChartType.BAR);
         chart.setSizeFull();
         Configuration conf = chart.getConfiguration();
-
+        
         conf.setTitle(this.title);
 
         XAxis x = new XAxis();
@@ -52,10 +52,11 @@ public class BasicBar extends AbstractVaadinChartExample {
         	
         	x.addCategory(((Permission) p[0]).getPermissionName());
         }
+      
         
         x.setTitle((String) null);
         conf.addxAxis(x);
-
+       
         YAxis y = new YAxis();
         y.setMin(0);
         AxisTitle title = new AxisTitle(null);
@@ -70,6 +71,7 @@ public class BasicBar extends AbstractVaadinChartExample {
 
         PlotOptionsBar plot = new PlotOptionsBar();
         plot.setDataLabels(new DataLabels(true));
+        
         conf.setPlotOptions(plot);
 
         Legend legend = new Legend();
@@ -82,7 +84,7 @@ public class BasicBar extends AbstractVaadinChartExample {
         legend.setBorderWidth(1);
         legend.setBackgroundColor(new SolidColor("#FFFFFF"));
         legend.setShadow(true);
-       
+      
         conf.setLegend(legend);
 
         conf.disableCredits();
@@ -90,9 +92,10 @@ public class BasicBar extends AbstractVaadinChartExample {
         List<Series> series = new ArrayList<Series>();
         ListSeries ls=new ListSeries("Times Identified");
         	for (Object[]p:data) {
-        	
+        		
         		ls.addData(convertToLong(p[1]));
         }
+        	
         	series.add(ls);
         //series.add(new ListSeries("Year 1800", 107, 31, 635, 203, 2));
        // series.add(new ListSeries("Year 1900", 133, 156, 947, 408, 6));
@@ -100,7 +103,7 @@ public class BasicBar extends AbstractVaadinChartExample {
         conf.setSeries(series);
 
         chart.drawChart(conf);
-
+        
         return chart;
     }
 	private Long convertToLong(Object o){

@@ -12,6 +12,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.FileResource;
+import com.vaadin.server.Page;
 import com.vaadin.server.VaadinService;
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.server.Sizeable.Unit;
@@ -20,8 +21,10 @@ import com.vaadin.ui.Alignment;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 
+import privacyanalyzer.app.security.SecurityUtils;
 import privacyanalyzer.backend.ApkRepository;
 import privacyanalyzer.backend.PermissionRepository;
+import privacyanalyzer.backend.data.Role;
 import privacyanalyzer.backend.data.entity.ApkModel;
 import privacyanalyzer.backend.data.entity.User;
 import privacyanalyzer.backend.service.AnalyzeService;
@@ -45,13 +48,14 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 	private final TrackerService trackerService;
 	private final PermissionCallsService permissionCallsService;
 	private final VariablesService variableService;
+
 	@Autowired
-	public ApkDetailsView(VariablesService variableService,NavigationManager navigationManager, ApkService apkService,
+	public ApkDetailsView(VariablesService variableService, NavigationManager navigationManager, ApkService apkService,
 			PermissionService permissionService, AnalyzeService analyzeService, TrackerService trackerService,
 			PermissionCallsService permissionCallsService) {
 		this.navigationManager = navigationManager;
 		this.apkService = apkService;
-		this.variableService=variableService;
+		this.variableService = variableService;
 		this.permissionService = permissionService;
 		this.analyzeService = analyzeService;
 		this.trackerService = trackerService;
@@ -62,6 +66,7 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 	public void init() {
 		this.backButton.addClickListener(e -> goBack());
 		this.analyzeApk.addClickListener(e -> goToAnalyzeView());
+		this.analyzeAgainButton.addClickListener(e -> analyzeAgain());
 		this.scoreBar.setVisible(false);
 	}
 
@@ -74,6 +79,28 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 		this.navigationManager.navigateTo(AnalyzeView.class);
 	}
 
+	public Long apkid;
+
+	private void analyzeAgain() {
+		
+		ApkModel apkmodel = this.apkService.getRepository().findById(apkid);
+		if (apkmodel == null) {
+			showNotFound();
+			return;
+		}
+		
+		apkmodel.setScore(analyzeService.calculateScore(apkmodel));
+		if (apkmodel.getUser()==null) {
+		User guestuser= new User("guest", "guest", "guest", Role.GUEST);
+		
+		apkService.save(apkmodel,guestuser );
+		}else 
+		{
+			apkService.save(apkmodel,apkmodel.getUser() );
+		}
+		Page.getCurrent().reload();
+	}
+
 	@Override
 	public void enter(ViewChangeEvent event) {
 		String apkId = event.getParameters();
@@ -82,6 +109,7 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 		} else {
 			try {
 				Long id = Long.parseLong(apkId);
+				apkid = id;
 				if (Long.toString(id).equalsIgnoreCase(apkId)) {
 					enterView(id);
 				} else
@@ -187,9 +215,14 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 
 			float score = apkmodel.getScore();
 			this.scoreBar.setCaptionAsHtml(true);
-			if (score==variableService.getVariables().getMaximumRiskScore()) {this.scoreBar.setCaption("<center>APK risk score: "+variableService.getVariables().getMaximumRiskScore()+"/"+variableService.getVariables().getMaximumRiskScore()+"</center>");}
-			else {
-			this.scoreBar.setCaption("<center>APK risk score: " + score + "/"+variableService.getVariables().getMaximumRiskScore()+"</center>");}
+			if (score == variableService.getVariables().getMaximumRiskScore()) {
+				this.scoreBar
+						.setCaption("<center>APK risk score: " + variableService.getVariables().getMaximumRiskScore()
+								+ "/" + variableService.getVariables().getMaximumRiskScore() + "</center>");
+			} else {
+				this.scoreBar.setCaption("<center>APK risk score: " + score + "/"
+						+ variableService.getVariables().getMaximumRiskScore() + "</center>");
+			}
 
 			if (score < variableService.getVariables().getGreenRisk()) {
 				this.scoreBar.setPrimaryStyleName("greenpbar");
@@ -211,18 +244,17 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 						+ "This APK looks suspicious because it uses some permissions dangerous/signature. "
 						+ "This does not mean that the APK is harmful but it indicates that the APK might be "
 						+ "able to get sensitive data from the user device");
-				
+
 			} else {
 				resource = new FileResource(new File(basepath + "/VAADIN/images/clean.png"));
 				statusLabel.setValue("Status: No dangerous activity found!");
-				statusLabel.setDescription("This result is based on permissions. "
-						+ "This APK looks non-harmful. "
+				statusLabel.setDescription("This result is based on permissions. " + "This APK looks non-harmful. "
 						+ "This does not mean that the APK is not a malware but it indicates "
 						+ "that the permissions that are used (or no permission is used) are not "
 						+ "dangerous enough to get sensitive data from the user device.");
 			}
 		}
-		
+
 		image.setDescription("This result is based on permissions.");
 		this.image.setSource(resource);
 		image.setWidth(100, Unit.PIXELS);
@@ -231,53 +263,62 @@ public class ApkDetailsView extends ApkDetailsViewDesign implements View {
 	}
 
 	private void setVirusTotalStatus(ApkModel apkmodel) {
-		String link="https://www.virustotal.com/#/file/"+apkmodel.getSha256();
+		String link = "https://www.virustotal.com/#/file/" + apkmodel.getSha256();
 		try {
 			VirusTotalReportResponse report = analyzeService.getVirusTotalReport(apkmodel.getSha256());
 			this.virusTotalNumberLabel.setDescription("by VirusTotal.com");
-				this.virusTotalLabel.setDescription("by VirusTotal.com");
+			this.virusTotalLabel.setDescription("by VirusTotal.com");
 			if (report == null) {
 				this.virusTotalNumberLabel.setVisible(false);
 				this.virusTotalLabel.setValue("VirusTotal is scanning the apk...");
 				return;
 			}
-			if (report.getResponseCode() == 204 || report.getResponseCode() >=400) {
+			if (report.getResponseCode() == 204 || report.getResponseCode() >= 400) {
 				this.virusTotalNumberLabel.setVisible(false);
-				//this.virusTotalLabel.setValue();
-				
-				this.virusTotalLabel.setValue("Unable to get Information from VirusTotal, please wait 1 minute and refresh (or <a href='"+link+"' rel='noopener noreferrer' target='_blank'>click here</a>)");
+				// this.virusTotalLabel.setValue();
+
+				this.virusTotalLabel.setValue(
+						"Unable to get Information from VirusTotal, please wait 1 minute and refresh (or <a href='"
+								+ link + "' rel='noopener noreferrer' target='_blank'>click here</a>)");
 				return;
 			}
 			if (report.getResponseCode() == 0) {
 				this.virusTotalNumberLabel.setVisible(false);
-				//this.virusTotalLabel.setValue();
-				
+				// this.virusTotalLabel.setValue();
+
 				this.virusTotalLabel.setValue("APK does not exist in VirusTotal's database.");
 				return;
 			}
-			
+
 			if (report.getResponseCode() == -2) {
 				this.virusTotalNumberLabel.setVisible(false);
-				//this.virusTotalLabel.setValue();
-				
-				this.virusTotalLabel.setValue("VirusTotal is analyzing the APK, please wait a few minutes for the results");
+				// this.virusTotalLabel.setValue();
+
+				this.virusTotalLabel
+						.setValue("VirusTotal is analyzing the APK, please wait a few minutes for the results");
 				return;
 			}
-			if (report.getResponseCode() ==1) {
+			if (report.getResponseCode() == 1) {
 				this.virusTotalNumberLabel.setVisible(true);
-				//System.out.println(report);
+				// System.out.println(report);
 				this.virusTotalNumberLabel.setValue(report.getPositives() + "/" + report.getTotal());
 				if (report.getPositives() == 0) {
-					this.virusTotalLabel.setValue("No engines detected this file as Malware (for more information <a href='"+link+"' rel='noopener noreferrer' target='_blank'>click here</a>)");
+					this.virusTotalLabel
+							.setValue("No engines detected this file as Malware (for more information <a href='" + link
+									+ "' rel='noopener noreferrer' target='_blank'>click here</a>)");
 					this.virusTotalNumberLabel.setPrimaryStyleName("vitustotallabelgreen");
-					
+
 				} else if (report.getPositives() == 1) {
-					this.virusTotalLabel.setValue("One engine detected this file as Malware (for more information <a href='"+link+"' rel='noopener noreferrer' target='_blank'>click here</a>)");
+					this.virusTotalLabel
+							.setValue("One engine detected this file as Malware (for more information <a href='" + link
+									+ "' rel='noopener noreferrer' target='_blank'>click here</a>)");
 					this.virusTotalNumberLabel.setPrimaryStyleName("vitustotallabelred");
 				} else if (report.getPositives() > 1) {
-					this.virusTotalLabel.setValue(report.getPositives() + " engines detected this file as Malware (for more information <a href='"+link+"' rel='noopener noreferrer' target='_blank'>click here</a>)");
+					this.virusTotalLabel.setValue(report.getPositives()
+							+ " engines detected this file as Malware (for more information <a href='" + link
+							+ "' rel='noopener noreferrer' target='_blank'>click here</a>)");
 					this.virusTotalNumberLabel.setPrimaryStyleName("vitustotallabelred");
-					
+
 				}
 			}
 		} catch (IOException e) {

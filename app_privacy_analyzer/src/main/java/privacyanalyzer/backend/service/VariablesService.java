@@ -32,7 +32,7 @@ public class VariablesService implements Serializable{
 
 
 	public Variables getVariables() {
-		return variables;
+		return variablesRepository.findByName("default");
 	}
 	
 	

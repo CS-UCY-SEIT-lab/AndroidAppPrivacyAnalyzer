@@ -24,6 +24,7 @@ import com.vaadin.ui.declarative.Design;
 @SuppressWarnings("serial")
 public class ApkDetailsViewDesign extends VerticalLayout {
 	protected Button backButton;
+	protected Button analyzeAgainButton;
 	protected Button analyzeApk;
 	protected Label appNameLabel;
 	protected Label dateLabel;
