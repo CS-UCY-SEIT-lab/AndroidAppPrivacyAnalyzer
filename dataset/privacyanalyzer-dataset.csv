@@ -1,0 +1,801 @@
+ID,App name,Backup enabled,Is debuggable,MinSdk,TargetSdk,Package name
+1,DioLite,TRUE,FALSE,16,23,com.bec3.mobilite
+2,Beta Updater for WhatsApp,TRUE,FALSE,15,22,com.javiersantos.whatsappbetaupdater
+3,cri.sanity,TRUE,FALSE,5,5,cri.sanity
+4,Duolingo,FALSE,FALSE,19,25,com.duolingo
+5,Bankdroid,TRUE,FALSE,9,24,com.liato.bankdroid
+6,Book Catalogue,TRUE,FALSE,4,4,com.eleybourn.bookcatalogue
+7,Dimmer,TRUE,FALSE,14,19,giraffine.dimmer
+8,Home Workout,FALSE,FALSE,17,26,homeworkout.homeworkouts.noequipment
+9,Diode,TRUE,FALSE,4,11,in.shick.diode
+10,Content Provider Helper,FALSE,FALSE,8,21,de.k3b.android.contentproviderhelper
+11,DO Swimmer,TRUE,FALSE,9,25,com.yassirh.digitalocean
+12,Tinfoil for Facebook,TRUE,FALSE,14,21,com.danvelazco.fbwrapper
+13,Beem,TRUE,FALSE,5,7,com.beem.project.beem
+14,Mileage,TRUE,FALSE,4,10,com.evancharlton.mileage
+15,net.micode.compass,TRUE,FALSE,4,4,net.micode.compass
+16,Cool Reader,TRUE,FALSE,3,17,org.coolreader
+17,aLogcat,TRUE,FALSE,3,11,org.jtb.alogcat
+18,AnyMemo,TRUE,FALSE,14,23,org.liberty.android.fantastischmemo
+19,Blokish,TRUE,FALSE,18,23,org.scoutant.blokish
+20,Photomath,TRUE,FALSE,16,25,com.microblink.photomath
+21,Copy to Clipboard,TRUE,FALSE,3,4,se.johanhil.clipboard
+22,se.johanhil.duckduckgo,TRUE,FALSE,4,4,se.johanhil.duckduckgo
+23,TED,FALSE,FALSE,16,27,com.ted.android
+24,Hi Security,FALSE,FALSE,16,24,com.ehawk.antivirus.applock.wifi
+25,Meteor Neutrino Boost,TRUE,FALSE,19,27,com.royal.meteor_neutrino_boost
+26,live.photo.savanna,TRUE,TRUE,10,10,live.photo.savanna
+27,com.sohu.inputmethod.sogou,TRUE,FALSE,7,7,com.sohu.inputmethod.sogou
+28,com.tcd.appstore,TRUE,TRUE,8,15,com.tcd.appstore
+29,com.example.xiaoshuo,TRUE,FALSE,8,8,com.example.xiaoshuo
+30,?,TRUE,FALSE,7,7,com.ydbl.kudou
+31,DroidCleaner,TRUE,FALSE,9,9,smart.apps.droidcleaner
+32,Mario HD Wallpapers,TRUE,FALSE,7,7,com.nnew.superMariowallpapers
+35,???,TRUE,FALSE,3,3,com.ggnts.chcsterfield
+36,com.google.smshandler,TRUE,TRUE,1,1,com.google.smshandler
+37,iWinOnline,FALSE,FALSE,8,10,vn.me.iwin
+38,Battery Doctor,TRUE,FALSE,5,5,com.androiddoctor.battery
+39,Ola,TRUE,FALSE,8,8,chat.ola.vn
+40,Android Updater,TRUE,FALSE,7,18,com.zwodrxcj.xnynjps
+41,Downloader,TRUE,FALSE,4,4,com.opera.install
+42,KyTien Launcher,TRUE,FALSE,3,16,abc.betterlife.android.game.kytien.big
+43,com.Security.Update,TRUE,TRUE,7,7,com.Security.Update
+44,com.android.system.admin,TRUE,FALSE,1,17,com.android.system.admin
+45,GoogleKernel,TRUE,FALSE,8,15,com.android.googlekernel
+46,Downloader,TRUE,FALSE,4,4,com.opera.installer
+47,com.android.tools.system,TRUE,TRUE,5,17,com.android.tools.system
+48,GOTV?,TRUE,FALSE,4,4,com.aw.avgotv
+49,Gatitos,TRUE,FALSE,9,9,com.cattss
+50,Chistes Cortos,TRUE,FALSE,9,9,com.chistescortos
+51,Chistes picantes,TRUE,FALSE,9,9,com.chistespicanticos
+52,Funnyys,TRUE,FALSE,9,9,com.funnyys
+53,Perritos,TRUE,FALSE,9,9,com.imagepets
+54,Recetas Salud,TRUE,FALSE,9,9,com.kitchenn
+55,Laughtter,TRUE,FALSE,9,9,com.laughtter
+56,Todo Amor,TRUE,FALSE,9,9,com.prasesamor
+57,Prasesfee,TRUE,FALSE,9,9,com.prasesfee
+58,Romantic post,TRUE,FALSE,9,9,com.romaticpost
+59,Statetss,TRUE,FALSE,9,9,com.statetss
+60,Frases celebres,TRUE,FALSE,9,9,com.thinkking
+61,A2DP Volume,TRUE,FALSE,15,25,a2dp.Vol
+62,andFHEM,TRUE,FALSE,7,7,li.klass.fhem
+63,AnySoftKeyboard - Basque,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.basque
+64,AntennaPod,TRUE,FALSE,14,25,de.danoeh.antennapod
+65,33c3 Wifi Setup,FALSE,FALSE,18,21,tf.nox.wifisetup
+66,AnyMemo,TRUE,FALSE,15,25,org.liberty.android.fantastischmemo
+67,33c3 SCR,TRUE,FALSE,9,25,org.ligi.scr
+68,KISS launcher,TRUE,FALSE,15,27,fr.neamar.kiss
+69,AnySoftKeyboard - Dutch Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.dutch
+70,1010! Klooni,TRUE,FALSE,8,25,io.github.lonamiwebs.klooni
+71,Tiny Tiny RSS,TRUE,FALSE,16,27,org.fox.tttrss
+72,Acastus,TRUE,FALSE,19,24,me.dbarnett.acastus
+74,aCalDAV,TRUE,FALSE,14,20,de.we.acaldav
+75,/r/Android App store,TRUE,FALSE,16,25,subreddit.android.appstore
+76,aarddict.android,TRUE,FALSE,3,3,aarddict.android
+77,Anuto TD,TRUE,FALSE,17,25,ch.logixisland.anuto
+79,Addi,TRUE,FALSE,2,2,com.addi
+80,MaterialOS,TRUE,FALSE,19,25,org.materialos.icons
+81,Another RSS,TRUE,FALSE,16,22,de.digisocken.anotherrss
+82,Camp 2015,TRUE,FALSE,14,22,nerd.tuxmobil.fahrplan.camp
+83,A Photo Manager,FALSE,FALSE,14,21,de.k3b.android.androFotoFinder
+84,Add to calendar,TRUE,FALSE,14,19,org.dgtale.icsimport
+85,Activity Diary,TRUE,FALSE,16,26,de.rampro.activitydiary
+86,And Bible,TRUE,FALSE,9,19,net.bible.android.activity
+87,AdAway,TRUE,FALSE,16,25,org.adaway
+88,Acrylic Paint,TRUE,FALSE,14,21,anupam.acrylic
+90,AnySoftKeyboard - French Language Pack,TRUE,FALSE,9,27,com.anysoftkeyboard.languagepack.french
+91,/system/app mover,TRUE,FALSE,7,21,de.j4velin.systemappmover
+92,2048,TRUE,FALSE,8,24,com.uberspot.a2048
+93,24game,TRUE,FALSE,10,12,com.traffar.a24game
+94,AnySoftKeyboard - Brazilian Portuguese Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.brazilian
+95,Analytical Translator,TRUE,FALSE,15,21,com.example.root.analyticaltranslator
+97,34C3 Schedule,TRUE,FALSE,14,22,info.metadude.android.congress.schedule
+98,Accordion,TRUE,FALSE,14,27,org.billthefarmer.accordion
+99,AndIodine,FALSE,FALSE,14,16,org.xapek.andiodine
+100,24h Analog Clock Widget,TRUE,FALSE,4,10,info.staticfree.android.twentyfourhour
+101,A Time Tracker,TRUE,FALSE,4,14,com.markuspage.android.atimetracker
+102,32C3 Schedule,TRUE,FALSE,14,22,nerd.tuxmobil.fahrplan.congress
+103,Chauffeur,TRUE,FALSE,9,27,com.menny.android.anysoftkeyboard
+104,Activity Launcher,TRUE,FALSE,14,25,de.szalkowski.activitylauncher
+105,33C3 Schedule,TRUE,FALSE,14,25,org.ligi.fahrplan
+106,AdAway,TRUE,FALSE,16,23,org.adaway
+107,CertTools,TRUE,FALSE,3,14,com.markuspage.android.certtools
+108,A2DP Volume,TRUE,FALSE,15,24,a2dp.Vol
+109,BRouter,TRUE,FALSE,10,10,btools.routingapp
+110,eu.uwot.fabio.altcoinprices,TRUE,FALSE,14,27,eu.uwot.fabio.altcoinprices
+111,AwesomeWallpaper,TRUE,FALSE,15,23,com.wolas.awesomewallpaper
+112,OTP Authenticator,FALSE,FALSE,15,23,net.bierbaumer.otp_authenticator
+113,org.bobstuff.bobball,TRUE,FALSE,10,23,org.bobstuff.bobball
+114,BiglyBT,TRUE,FALSE,15,25,com.biglybt.android.client
+115,Chanu,TRUE,FALSE,15,19,com.chanapps.four.activity
+116,andFHEM,TRUE,FALSE,7,7,li.klass.fhem
+117,de.retujo.bierverkostung,FALSE,FALSE,18,25,de.retujo.bierverkostung
+118,AnySoftKeyboard - Czech Language Pack,TRUE,FALSE,7,26,org.herrlado.ask.languagepack.czech
+119,Battery level,TRUE,FALSE,8,18,souch.smsbypass
+120,Acastus,TRUE,FALSE,19,24,me.dbarnett.acastus
+121,Auto-Away,TRUE,FALSE,3,17,com.teamdc.stephendiniz.autoaway
+122,And Bible,TRUE,FALSE,9,19,net.bible.android.activity
+123,Ameixa Monochrome,TRUE,FALSE,16,25,org.xphnx.ameixamonochrome
+124,AnySoftKeyboard - Slovene Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.slovene
+125,BitShares Wallet,TRUE,FALSE,14,23,de.bitsharesmunich.wallet
+126,AsteroidOS Sync,TRUE,FALSE,18,25,org.asteroidos.sync
+127,ChartDroid Core,TRUE,FALSE,3,3,com.googlecode.chartdroid
+128,Bysyklist Oslo,TRUE,FALSE,3,10,no.rkkc.bysykkel
+129,Calendar Import-Export,TRUE,FALSE,8,23,org.sufficientlysecure.ical
+130,Check Network,FALSE,FALSE,7,7,org.zephyrsoft.checknetwork
+131,Capitole du Libre,FALSE,FALSE,16,26,org.toulibre.capitoledulibre
+132,CMIS Browser,TRUE,FALSE,4,4,de.fmaul.android.cmis
+134,AndStatus,FALSE,FALSE,24,27,org.andstatus.app
+135,andOTP,TRUE,FALSE,19,27,org.shadowice.flocke.andotp
+136,Apple UnifiedNlp Backend,FALSE,FALSE,10,23,org.microg.nlp.backend.apple
+137,AtmosphereLogger,TRUE,FALSE,11,11,org.tamanegi.atmosphere
+138,Car Report,TRUE,FALSE,15,27,me.kuehle.carreport
+139,de.nico.asura,TRUE,FALSE,9,23,de.nico.asura
+140,BeHe ExploreR,TRUE,FALSE,14,13,com.vlath.beheexplorer
+141,aLogcat,TRUE,FALSE,3,10,org.jtb.alogcat
+142,Bitcoin Wallet [testnet3],FALSE,FALSE,19,27,de.schildbach.wallet_test
+143,AnySoftKeyboard - Tatar Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.tatar
+144,Authorizer,TRUE,FALSE,14,24,net.tjado.passwdsafe
+145,Camp 2015,TRUE,FALSE,14,22,nerd.tuxmobil.fahrplan.camp
+146,/system/app mover,TRUE,FALSE,4,21,de.j4velin.systemappmover
+147,AndroSS,TRUE,FALSE,7,7,net.tedstein.AndroSS
+148,Anime Openings,TRUE,FALSE,16,23,gq.nulldev.animeopenings.app
+149,Angulo,TRUE,FALSE,8,8,eu.domob.angulo
+150,Anstop,TRUE,FALSE,4,4,An.stop
+151,Budget,TRUE,FALSE,15,19,com.notriddle.budget
+152,Changelog,TRUE,FALSE,15,25,org.polaric.cyanogenmodchangelog
+153,aSQLiteManager,TRUE,FALSE,3,15,dk.andsen.asqlitemanager
+154,Auto Airplane Mode,FALSE,FALSE,23,25,org.miamplayer.autoairplanemode
+155,Always On AMOLED,FALSE,FALSE,19,24,com.tomer.alwayson
+156,BeHe ExploreR,TRUE,FALSE,14,23,com.vlath.beheexplorer
+157,AFWall+,FALSE,FALSE,15,23,dev.ukanth.ufirewall
+159,Caffeine Tile,TRUE,FALSE,24,25,info.zwanenburg.caffeinetile
+160,Apps Organizer,TRUE,FALSE,3,3,com.google.code.appsorganizer
+161,Ask me anything meaningful,TRUE,FALSE,14,22,de.lsubel.amam
+162,AudioMeter,TRUE,FALSE,17,25,com.quaap.audiometer
+163,Alarm Klock,TRUE,FALSE,4,23,com.angrydoughnuts.android.alarmclock
+164,aSQLiteManager,TRUE,TRUE,3,8,dk.andsen.asqlitemanager
+165,CACertMan,TRUE,FALSE,7,7,info.guardianproject.cacert
+166,FragDenStaat,TRUE,FALSE,16,22,de.fragdenstaat.app
+167,Anecdote,TRUE,FALSE,16,25,io.gresse.hugo.anecdote
+168,android.calendar.ics.adapter,FALSE,FALSE,8,21,de.k3b.android.calendar.ics.adapter
+169,ApkTrack,TRUE,FALSE,15,26,fr.kwiatkowski.ApkTrack
+170,34C3 Schedule,TRUE,FALSE,14,22,info.metadude.android.congress.schedule
+171,BlitzMail,TRUE,FALSE,11,25,de.grobox.blitzmail
+172,com.darshancomputing.BatteryIndicatorPro,TRUE,FALSE,7,22,com.darshancomputing.BatteryIndicatorPro
+173,BusTO,TRUE,FALSE,7,23,it.reyboz.bustorino
+174,c3nav,FALSE,FALSE,14,27,de.c3nav.droid
+175,de.retujo.bierverkostung,FALSE,FALSE,18,25,de.retujo.bierverkostung
+176,uk.co.busydoingnothing.catverbs,TRUE,FALSE,7,14,uk.co.busydoingnothing.catverbs
+177,AnySoftKeyboard - Icelandic Language Pack,TRUE,FALSE,7,26,com.anysoftkeyboard.languagepack.icelandic
+178,Caramelos,TRUE,FALSE,9,25,com.dfzlv.gjjlt.caramelos
+179,AFWall+,FALSE,FALSE,15,23,dev.ukanth.ufirewall
+180,com.darshancomputing.BatteryIndicator,TRUE,FALSE,7,22,com.darshancomputing.BatteryIndicator
+182,/r/Android App store,TRUE,FALSE,16,24,subreddit.android.appstore
+183,Blokish,TRUE,FALSE,18,25,org.scoutant.blokish
+184,Binaural Beats Therapy,TRUE,FALSE,7,7,com.ihunda.android.binauralbeat
+185,Birthday Adapter,TRUE,FALSE,8,15,org.birthdayadapter
+186,BusyBox,TRUE,FALSE,9,25,ru.meefik.busybox
+187,2048,TRUE,FALSE,8,23,com.uberspot.a2048
+188,org.bobstuff.bobball,TRUE,FALSE,10,23,org.bobstuff.bobball
+189,Andor's Trail,TRUE,FALSE,4,10,com.gpl.rpg.AndorsTrail
+190,Android Token,TRUE,FALSE,8,24,uk.co.bitethebullet.android.token
+191,Bad Pixels,TRUE,FALSE,8,24,tk.al54.dev.badpixels
+192,BasketBuild Downloader,FALSE,FALSE,16,25,org.basketbuilddownloader
+193,AnySoftKeyboard - Hebrew Language Pack,TRUE,FALSE,7,26,com.anysoftkeyboard.languagepack.hebrew
+194,AndStatus,FALSE,FALSE,24,27,org.andstatus.app
+196,andOTP,TRUE,FALSE,19,27,org.shadowice.flocke.andotp
+197,Bitcoin,TRUE,FALSE,15,21,com.btcontract.wallet
+198,ArchWiki Viewer,TRUE,FALSE,15,25,com.jtmcn.archwiki.viewer
+199,Call Recorder,TRUE,FALSE,9,23,com.github.axet.callrecorder
+200,AnySoftKeyboard - Ukrainian Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.ukrainian
+201,Calendar Notifications,TRUE,FALSE,18,25,com.github.quarck.calnotify
+202,33c3 SCR,TRUE,FALSE,9,25,org.ligi.scr
+203,net.nullsum.audinaut,TRUE,FALSE,19,27,net.nullsum.audinaut
+204,AntennaPod,TRUE,FALSE,14,25,de.danoeh.antennapod
+205,Chibe,TRUE,FALSE,14,24,com.jmstudios.chibe
+208,Anime Openings,TRUE,FALSE,16,23,gq.nulldev.animeopenings.app
+209,AnySoftKeyboard - Norwegian Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.norwegian
+210,eu.uwot.fabio.altcoinprices,TRUE,FALSE,14,27,eu.uwot.fabio.altcoinprices
+211,Bewegungsmelder,TRUE,FALSE,9,23,de.arnefeil.bewegungsmelder
+212,Acrylic Paint,TRUE,FALSE,14,21,anupam.acrylic
+213,org.adw.launcher,TRUE,FALSE,5,5,org.adw.launcher
+214,neo2 for AnySoftKeyboard,TRUE,FALSE,7,23,com.anysoftkeyboard.languagepack.neo
+215,Bluetooth RepRap,TRUE,TRUE,8,8,com.hermit.btreprap
+216,AddressToGPS,TRUE,FALSE,14,22,me.danielbarnett.addresstogps
+217,Birthday Calendar,TRUE,FALSE,17,26,saschpe.contactevents
+218,BitShares Wallet,TRUE,FALSE,14,23,de.bitsharesmunich.wallet
+219,AnySoftKeyboard - Russian Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.russian2
+221,Bimba,TRUE,FALSE,19,27,ml.adamsprogs.bimba
+222,BookWorm,TRUE,FALSE,4,4,com.totsp.bookworm
+223,io.github.phora.androptpb,TRUE,FALSE,19,23,io.github.phora.androptpb
+224,Simple Camera,TRUE,FALSE,16,27,com.simplemobiletools.camera
+225,Baby Sleep Sounds,FALSE,FALSE,16,27,protect.babysleepsounds
+226,Camera Roll,FALSE,FALSE,19,27,us.koller.cameraroll
+227,Akhyou!,TRUE,FALSE,14,24,dulleh.akhyou.fdroid
+228,AsciiCam,TRUE,FALSE,4,14,com.dozingcatsoftware.asciicam
+229,agram,TRUE,FALSE,8,23,us.achromaticmetaphor.agram
+230,arXiv mobile,TRUE,FALSE,4,15,com.commonsware.android.arXiv
+232,arXiv Papers,TRUE,FALSE,18,27,com.rockbyte.arxiv
+233,Birthday Adapter,TRUE,FALSE,8,15,org.birthdayadapter
+235,CamTimer,TRUE,FALSE,8,14,com.dozingcatsoftware.cameratimer
+236,Balance,TRUE,FALSE,8,16,de.mangelow.balance
+237,ChronoSnap,TRUE,FALSE,15,21,com.nathanosman.chronosnap
+238,AnySoftKeyboard - German Language Pack,TRUE,FALSE,7,26,com.anysoftkeyboard.languagepack.german
+239,Android CUPS Print,TRUE,FALSE,19,25,io.github.benoitduffez.cupsprint
+240,Arity,TRUE,FALSE,3,7,arity.calculator
+241,net.nullsum.audinaut,TRUE,FALSE,19,27,net.nullsum.audinaut
+242,eu.uwot.fabio.altcoinprices,TRUE,FALSE,14,27,eu.uwot.fabio.altcoinprices
+243,Beacon Locator,TRUE,FALSE,18,22,com.samebits.beacon.locator
+244,Android Activity Tracker,TRUE,FALSE,10,27,ch.bailu.aat
+245,net.androgames.level,TRUE,FALSE,4,11,net.androgames.level
+246,Bitmask,TRUE,FALSE,16,27,se.leap.bitmaskclient
+247,Ameixa Monochrome,TRUE,FALSE,16,25,org.xphnx.ameixamonochrome
+248,Chroma Doze,TRUE,FALSE,8,23,net.pmarks.chromadoze
+249,andRoc,TRUE,FALSE,3,4,net.rocrail.androc
+250,Bimba,TRUE,FALSE,19,27,ml.adamsprogs.bimba
+251,aFreeRDP,TRUE,FALSE,14,25,com.freerdp.afreerdp
+252,neo2 for AnySoftKeyboard,TRUE,FALSE,7,23,com.anysoftkeyboard.languagepack.neo
+253,33C3 Schedule,TRUE,FALSE,14,22,org.ligi.fahrplan
+254,BARIA,TRUE,FALSE,15,25,com.easwareapps.baria
+255,BMI Calculator,TRUE,FALSE,14,26,com.zola.bmi
+256,AnySoftKeyboard - ???? ???? ???,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.greek
+257,Bubble,TRUE,FALSE,16,22,com.nkanaev.comics
+258,AURdroid,TRUE,FALSE,16,27,com.rascarlo.aurdroid
+259,BasketBuild Downloader,FALSE,FALSE,16,24,org.basketbuilddownloader
+260,BeHe Pro,TRUE,FALSE,14,19,com.vlath.beheexplorer
+261,BirthDay Droid,TRUE,FALSE,19,24,com.tmendes.birthdaydroid
+262,c3nav,FALSE,FALSE,14,27,de.c3nav.droid
+263,Simple Calculator,TRUE,FALSE,16,27,com.simplemobiletools.calculator
+264,Calculator,TRUE,FALSE,14,23,com.android2.calculator3
+265,AiCiA,TRUE,FALSE,7,19,net.gorry.aicia
+266,Bluez IME,TRUE,FALSE,8,8,com.hexad.bluezime
+267,ADSdroid,TRUE,FALSE,9,21,hu.vsza.adsdroid
+268,APV PDF Viewer,TRUE,FALSE,3,10,cx.hell.android.pdfview
+269,Birthday Calendar,TRUE,FALSE,17,26,saschpe.contactevents
+270,io.github.phora.aeondroid,TRUE,FALSE,5,23,io.github.phora.aeondroid
+271,Atomic,TRUE,FALSE,14,22,indrora.atomic
+272,Anuto TD,TRUE,FALSE,17,25,ch.logixisland.anuto
+273,Bitcoin Wallet,FALSE,FALSE,19,27,de.schildbach.wallet
+274,Calculator,TRUE,FALSE,14,25,com.xlythe.calculator.material
+275,neo2 for AnySoftKeyboard,TRUE,FALSE,7,23,com.anysoftkeyboard.languagepack.neo
+276,Bullseye,TRUE,FALSE,16,25,x653.bullseye
+277,Chip8,TRUE,FALSE,23,26,com.dkanada.chip
+278,Blurred Lines Live Wallpaper,TRUE,FALSE,8,22,cxa.lineswallpaper
+279,aMetro,TRUE,FALSE,15,23,org.ametro
+280,Apple Flinger,TRUE,FALSE,9,22,com.gitlab.ardash.appleflinger.android
+281,Battery Charge Limit,FALSE,FALSE,14,25,com.slash.batterychargelimit
+282,Clock widget,TRUE,FALSE,17,25,community.fairphone.clock
+283,AndroidPN Client,TRUE,FALSE,11,23,org.androidpn.client
+284,AnySoftKeyboard - Finnish Language Pack,TRUE,FALSE,7,25,com.menny.anysoftkeyboard.finnish
+286,BusyBox,TRUE,FALSE,9,25,ru.meefik.busybox
+287,andOTP,TRUE,FALSE,19,27,org.shadowice.flocke.andotp
+288,Baby Sleep Sounds,FALSE,FALSE,16,23,protect.babysleepsounds
+289,Simple App Launcher,TRUE,FALSE,16,27,com.simplemobiletools.applauncher
+290,agram,TRUE,FALSE,8,23,us.achromaticmetaphor.agram
+291,Bluetooth terminal,TRUE,FALSE,15,22,ru.sash0k.bluetooth_terminal
+292,Another RSS,TRUE,FALSE,16,22,de.digisocken.anotherrss
+293,AnyMemo,TRUE,FALSE,15,25,org.liberty.android.fantastischmemo
+294,net.nullsum.audinaut,TRUE,FALSE,19,27,net.nullsum.audinaut
+295,AndroidPN Client,TRUE,FALSE,17,23,org.androidpn.client
+296,BirthDay Droid,TRUE,FALSE,19,24,com.tmendes.birthdaydroid
+297,AndIodine,FALSE,FALSE,14,16,org.xapek.andiodine
+298,AndroSS,TRUE,FALSE,7,7,net.tedstein.AndroSS
+299,Book Reader,TRUE,FALSE,9,25,com.github.axet.bookreader
+300,Easer,TRUE,FALSE,15,23,ryey.easer
+301,AndrOBD,TRUE,FALSE,14,26,com.fr3ts0n.ecu.gui.androbd
+302,Audio Recorder,TRUE,FALSE,9,23,com.github.axet.audiorecorder
+303,c-beam,TRUE,FALSE,8,17,org.c_base.c_beam
+304,Colors Overflow,TRUE,FALSE,15,15,eu.veldsoft.colors.overflow
+305,Ask me anything meaningful,TRUE,FALSE,14,22,de.lsubel.amam
+306,BasketBuild Downloader,FALSE,FALSE,16,24,org.basketbuilddownloader
+307,Chromium SWE Updater,TRUE,FALSE,15,25,chromiumupdater.bamless.com.chromiumsweupdater
+308,CityZen,TRUE,FALSE,15,25,com.cityzen.cityzen
+309,ApkTrack,TRUE,FALSE,15,25,fr.kwiatkowski.ApkTrack
+310,net.androgames.level,TRUE,FALSE,4,11,net.androgames.level
+311,AFH Downloader,FALSE,FALSE,16,24,org.afhdownloader
+312,Easer,TRUE,FALSE,15,23,ryey.easer
+313,Boilr,TRUE,FALSE,15,24,mobi.boilr.boilr
+314,SeaMapDroid,TRUE,FALSE,15,25,org.seamapdroid
+315,Blurred Lines Live Wallpaper,TRUE,FALSE,8,22,cxa.lineswallpaper
+316,32C3 Schedule,TRUE,FALSE,14,22,nerd.tuxmobil.fahrplan.congress
+318,Bats! HIIT,TRUE,FALSE,8,19,org.jfet.batsHIIT
+319,ADB Manager,TRUE,FALSE,10,19,com.matoski.adbm
+320,AndroSS,TRUE,FALSE,7,7,net.tedstein.AndroSS
+321,de.nico.asura,TRUE,FALSE,9,23,de.nico.asura
+322,Apk Extractor,TRUE,FALSE,10,25,axp.tool.apkextractor
+323,Blockinger,TRUE,FALSE,8,17,org.blockinger.game
+325,AN2Linux,TRUE,FALSE,19,25,kiwi.root.an2linuxclient
+326,AddressToGPS,TRUE,FALSE,9,22,me.danielbarnett.addresstogps
+327,Budget Watch,FALSE,FALSE,14,27,protect.budgetwatch
+328,BeHe Keyboard,TRUE,FALSE,18,26,com.vlath.keyboard
+329,CamCov,TRUE,FALSE,15,24,ryey.camcov
+330,Cat Generator,TRUE,FALSE,17,23,com.agateau.catgenerator
+331,Calendar Color,TRUE,FALSE,14,21,ch.ihdg.calendarcolor
+332,AnySoftKeyboard - Portuguese Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.portuguese
+333,Clean Status Bar,TRUE,FALSE,15,22,com.emmaguy.cleanstatusbar
+334,Aeon's End,TRUE,FALSE,15,26,com.games.boardgames.aeonsend
+335,Beta Updater for WhatsApp,TRUE,FALSE,15,22,com.javiersantos.whatsappbetaupdater
+336,1010! Klooni,TRUE,FALSE,8,25,io.github.lonamiwebs.klooni
+338,CIDR Calculator,TRUE,FALSE,11,22,us.lindanrandy.cidrcalculator
+339,Cherry,TRUE,FALSE,14,27,de.live.gdev.cherrymusic
+340,AN2Linux,TRUE,FALSE,19,25,kiwi.root.an2linuxclient
+341,Car Report,TRUE,FALSE,15,27,me.kuehle.carreport
+342,A Photo Manager,FALSE,FALSE,14,21,de.k3b.android.androFotoFinder
+343,BirthDay Droid,TRUE,FALSE,19,24,com.tmendes.birthdaydroid
+344,Android CUPS Print,TRUE,FALSE,19,25,io.github.benoitduffez.cupsprint
+345,BeeCount,TRUE,FALSE,14,23,com.knirirr.beecount
+346,Bullseye,TRUE,FALSE,16,25,x653.bullseye
+347,LibreSubstratum,TRUE,FALSE,24,26,com.jereksel.libresubstratum
+348,aMetro,TRUE,FALSE,3,4,org.ametro
+349,Blokish,TRUE,FALSE,18,25,org.scoutant.blokish
+350,And Bible,TRUE,FALSE,9,19,net.bible.android.activity
+351,AnySoftKeyboard - Macedonian Language Pack,TRUE,FALSE,7,26,com.anysoftkeyboard.languagepack.macedonian
+352,BookWorm,TRUE,FALSE,4,4,com.totsp.bookworm
+353,Battery Charge Limit,FALSE,FALSE,17,25,com.slash.batterychargelimit
+355,Android Battery Dog,TRUE,FALSE,3,3,net.sf.andbatdog.batterydog
+356,Bulkshare 2,TRUE,FALSE,15,23,me.alexghr.bulkshare.android.app2
+357,Baby Sleep Sounds,FALSE,FALSE,16,27,protect.babysleepsounds
+358,Birthday Adapter,TRUE,FALSE,7,25,org.birthdayadapter
+359,AndroidPN Client,TRUE,FALSE,17,23,org.androidpn.client
+360,Clover,TRUE,FALSE,15,25,org.floens.chan
+361,Ask me anything meaningful,TRUE,FALSE,14,22,de.lsubel.amam
+362,Always On AMOLED Plugin,TRUE,FALSE,19,22,tomer.com.alwaysonamoledplugin
+363,Apple UnifiedNlp Backend,FALSE,FALSE,10,23,org.microg.nlp.backend.apple
+364,Audiometry Made Easy,TRUE,FALSE,8,21,ut.ewh.audiometrytest
+366,AIProute,TRUE,FALSE,14,15,systems.byteswap.aiproute
+367,ANNO 1404 - Calculator,TRUE,FALSE,17,25,de.ktran.anno1404warenrechner
+368,Car Cast,TRUE,TRUE,3,4,com.jadn.cc
+370,AN2Linux,TRUE,FALSE,19,25,kiwi.root.an2linuxclient
+371,BLExplorer,TRUE,FALSE,18,22,org.ligi.blexplorer
+372,CamCov,TRUE,FALSE,15,23,ryey.camcov
+373,AntennaPod,TRUE,FALSE,10,25,de.danoeh.antennapod
+374,AddressToGPS,TRUE,FALSE,14,22,me.danielbarnett.addresstogps
+375,AFWall+,FALSE,FALSE,15,23,dev.ukanth.ufirewall
+376,Budget Watch,FALSE,FALSE,14,27,protect.budgetwatch
+377,Applications Info,TRUE,FALSE,16,23,com.majeur.applicationsinfo
+378,Amaze,TRUE,FALSE,14,25,com.amaze.filemanager
+379,AnySoftKeyboard - Danish Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.danish
+380,33c3 SCR,TRUE,FALSE,9,25,org.ligi.scr
+381,Battery level,TRUE,FALSE,8,18,souch.smsbypass
+382,BeHe Keyboard,TRUE,FALSE,18,26,com.vlath.keyboard
+383,Amdroid,TRUE,FALSE,14,19,com.sound.ampache
+384,AnySoftKeyboard - Spanish Language Pack,TRUE,FALSE,7,26,com.anysoftkeyboard.languagepack.spain
+385,arXiv Droid,TRUE,FALSE,4,11,com.commonsware.android.arXiv
+386,aLogcat,TRUE,FALSE,3,4,org.jtb.alogcat
+387,Ameixa,TRUE,FALSE,16,25,org.xphnx.ameixa
+389,BackgroundRestrictor,TRUE,FALSE,24,26,com.pavelsikun.runinbackgroundpermissionsetter
+390,cz.hejl.chesswalk,TRUE,FALSE,3,4,cz.hejl.chesswalk
+391,Bienvenido a Internet,TRUE,FALSE,15,23,org.bienvenidoainternet.app
+392,androidVNC,TRUE,FALSE,3,4,android.androidVNC
+393,AnySoftKeyboard - Latvian Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.latvian
+394,Clock+,TRUE,FALSE,19,25,com.philliphsu.clock2
+395,Bewegungsmelder,TRUE,FALSE,11,23,de.arnefeil.bewegungsmelder
+397,BusTO,TRUE,FALSE,7,23,it.reyboz.bustorino
+398,ALSA Mixer WebUI,TRUE,FALSE,15,27,cz.jiriskorpil.amixerwebui
+399,Barcode Scanner,TRUE,FALSE,15,21,com.google.zxing.client.android
+401,Anecdote,TRUE,FALSE,16,25,io.gresse.hugo.anecdote
+402,Barcodegen,TRUE,FALSE,19,24,de.cryptobitch.muelli.barcodegen
+403,BeHe Keyboard,TRUE,FALSE,18,26,com.vlath.keyboard
+404,CACertMan,TRUE,FALSE,8,8,info.guardianproject.cacert
+405,BLExplorer,TRUE,FALSE,18,22,org.ligi.blexplorer
+406,Bitcoin,TRUE,FALSE,15,21,com.btcontract.wallet
+407,Android Token,TRUE,FALSE,7,16,uk.co.bitethebullet.android.token
+408,Calendula,TRUE,FALSE,16,25,es.usc.citius.servando.calendula
+410,Bitcoin Wallet,FALSE,FALSE,19,27,de.schildbach.wallet
+411,Addi,TRUE,FALSE,2,2,com.addi
+412,Another RSS,TRUE,FALSE,16,22,de.digisocken.anotherrss
+413,Checkey,TRUE,FALSE,8,21,info.guardianproject.checkey
+414,Clip Stack,TRUE,FALSE,14,22,com.catchingnow.tinyclipboardmanager
+415,Bienvenido a Internet,TRUE,FALSE,15,23,org.bienvenidoainternet.app
+416,AnySoftKeyboard - Swedish Language Pack,TRUE,FALSE,7,25,com.anysoftkeyboard.languagepack.swedish
+417,ApkTrack,TRUE,FALSE,15,25,fr.kwiatkowski.ApkTrack
+418,Bewegungsmelder,TRUE,FALSE,7,16,de.arnefeil.bewegungsmelder
+419,BART Runner,TRUE,FALSE,14,23,com.dougkeen.bart
+420,Clear List,TRUE,FALSE,16,23,douzifly.list
+421,BoogDroid,TRUE,FALSE,15,21,me.johnmh.boogdroid
+422,andRoc,TRUE,FALSE,3,4,net.rocrail.androc
+423,Always On AMOLED,TRUE,FALSE,19,24,com.tomer.alwayson
+424,AndStatus,FALSE,FALSE,24,27,org.andstatus.app
+426,Clementine Remote,TRUE,FALSE,15,24,de.qspool.clementineremote
+427,Android Explorer,TRUE,FALSE,16,23,com.iamtrk.androidexplorer
+428,de.nico.asura,TRUE,FALSE,9,22,de.nico.asura
+429,Bitcoin Wallet [testnet3],FALSE,FALSE,19,27,de.schildbach.wallet_test
+430,Camera Roll,FALSE,FALSE,19,27,us.koller.cameraroll
+431,OTP Authenticator,FALSE,FALSE,15,23,net.bierbaumer.otp_authenticator
+432,BabyName,TRUE,FALSE,15,23,fr.hnit.babyname
+433,aCalDAV,TRUE,FALSE,14,20,de.we.acaldav
+434,Ameixa,TRUE,FALSE,16,25,org.xphnx.ameixa
+435,Birthday Calendar,TRUE,FALSE,17,27,saschpe.contactevents
+436,AFH Downloader,FALSE,FALSE,16,24,org.afhdownloader
+437,Cache Cleaner,TRUE,FALSE,9,23,com.frozendevs.cache.cleaner
+438,Book Catalogue,TRUE,FALSE,4,4,com.eleybourn.bookcatalogue
+440,Calendar Color,TRUE,FALSE,14,21,ch.ihdg.calendarcolor
+441,Android CUPS Print,TRUE,FALSE,19,25,io.github.benoitduffez.cupsprint
+442,AwesomeWallpaper,TRUE,FALSE,15,17,com.wolas.awesomewallpaper
+443,Easer,TRUE,FALSE,15,23,ryey.easer
+444,ALSA Mixer WebUI,TRUE,FALSE,15,27,cz.jiriskorpil.amixerwebui
+445,Calendula,TRUE,FALSE,16,25,es.usc.citius.servando.calendula
+446,Capitole du Libre,FALSE,FALSE,16,25,org.toulibre.capitoledulibre
+447,Caffeine Tile,TRUE,FALSE,24,25,info.zwanenburg.caffeinetile
+448,OTP Authenticator,FALSE,FALSE,15,23,net.bierbaumer.otp_authenticator
+449,Berlin-Vegan,TRUE,FALSE,15,22,org.berlin_vegan.bvapp
+450,AnySoftKeyboard - Czech Language Pack,TRUE,FALSE,7,26,org.herrlado.ask.languagepack.czech
+451,Anecdote,TRUE,FALSE,16,25,io.gresse.hugo.anecdote
+452,Ameixa Monochrome,TRUE,FALSE,16,25,org.xphnx.ameixamonochrome
+453,Android version,TRUE,FALSE,14,26,com.github.mueller_ma.viewandroidversion
+454,Bomber,TRUE,FALSE,1,1,org.beide.bomber
+455,Bimba beta,TRUE,FALSE,19,27,ml.adamsprogs.bimba
+456,Bitmask,TRUE,FALSE,16,26,se.leap.bitmaskclient
+457,Calendar Import-Export,TRUE,FALSE,8,23,org.sufficientlysecure.ical
+458,Accordion,TRUE,FALSE,14,25,org.billthefarmer.accordion
+459,Calendar Widget,TRUE,FALSE,15,25,com.plusonelabs.calendar
+460,Always On AMOLED,TRUE,FALSE,19,24,com.tomer.alwayson
+462,AnotherMonitor,TRUE,FALSE,16,23,org.anothermonitor
+463,andRoc,TRUE,FALSE,3,4,net.rocrail.androc
+464,AutoAnswer,TRUE,FALSE,6,6,com.everysoft.autoanswer
+465,Simple Clock,TRUE,FALSE,16,27,com.simplemobiletools.clock
+467,AFH Downloader,FALSE,FALSE,16,25,org.afhdownloader
+468,Bluetooth Viewer,TRUE,FALSE,14,19,net.bluetoothviewer
+469,BoogDroid,TRUE,FALSE,15,21,me.johnmh.boogdroid
+470,Barnacle Wifi Tether,TRUE,FALSE,3,6,net.szym.barnacle
+471,Cmus Remote,TRUE,FALSE,7,7,com.joshtwigg.cmus.droid
+472,AnkiDroid,TRUE,FALSE,10,25,com.ichi2.anki
+473,Candy Memory,TRUE,FALSE,11,26,se.tube42.kidsmem.android
+474,Catan Dice Game,TRUE,FALSE,7,7,com.ridgelineapps.resdicegame
+475,Bitcoin,TRUE,FALSE,15,21,com.btcontract.wallet
+476,Bulkshare 2,TRUE,FALSE,15,23,me.alexghr.bulkshare.android.app2
+477,BabyName,TRUE,FALSE,15,23,fr.hnit.babyname
+478,Auto Updater for Chromium,TRUE,FALSE,19,24,com.dosse.chromiumautoupdater
+479,aSQLiteManager,TRUE,TRUE,3,8,dk.andsen.asqlitemanager
+480,Ameixa,TRUE,FALSE,16,25,org.xphnx.ameixa
+482,Voice Notify,TRUE,FALSE,18,27,com.pilot51.voicenotify
+483,Voice Notify,TRUE,FALSE,18,27,com.pilot51.voicenotify
+484,VuDroid,TRUE,TRUE,3,7,org.vudroid
+486,Siteswap Generator,TRUE,FALSE,15,25,namlit.siteswapgenerator
+487,RainTime,TRUE,FALSE,14,23,nl.implode.regenalarm
+488,Desk Android SDK,FALSE,FALSE,15,23,com.degoo.android
+489,4shared,TRUE,FALSE,16,27,com.forshared
+490,9Apps,FALSE,FALSE,10,20,com.mobile.indiapp
+491,com.qihoo.security,FALSE,FALSE,14,14,com.qihoo.security
+492,Ac Market,TRUE,FALSE,11,26,ac.market.store
+493,save from net,TRUE,FALSE,16,25,for.com.trailer.savefromapp
+494,video.player.videoplayer,TRUE,FALSE,18,25,video.player.videoplayer
+495,Hi VPN,TRUE,FALSE,16,25,com.ehawk.proxy.freevpn
+496,Tamil Music ON,TRUE,FALSE,15,25,com.mobilegit.tamilsongs
+497,Auto Comment,TRUE,FALSE,15,23,clr.rksoftware.com.autocomment
+499,DiskDigger,FALSE,FALSE,14,27,com.defianttech.diskdigger
+500,Damon Ps2 Emulator,TRUE,FALSE,16,25,com.damonps2pro.ppssppemu.ps2emulator.damonproapk
+501,VidMate,TRUE,FALSE,14,17,com.nemo.vidmate
+502,Avee Player,TRUE,FALSE,16,26,com.daaw.avee
+504,Wish,TRUE,FALSE,16,23,com.contextlogic.wish
+505,Earth,TRUE,FALSE,16,26,com.google.earth
+506,Phone X Launcher,TRUE,FALSE,16,27,com.launcher.ios11.iphonex
+507,Power Cleaner,FALSE,FALSE,19,25,com.superpower.clean.power.space.booster
+508,KeepVid,TRUE,FALSE,15,24,com.keepvid.studio
+509,Tumblr Video,FALSE,FALSE,19,25,com.tumblr
+510,Hentai Manga,FALSE,FALSE,15,22,com.hentaimanga.echhi
+511,Betternet,FALSE,FALSE,16,26,com.freevpnintouch
+512,Subscriber,TRUE,FALSE,15,23,com.gamestruct.GetSubscribersAndroid
+514,Design,TRUE,FALSE,16,27,com.brakefield.idfree
+515,FortNit Royale,TRUE,FALSE,15,26,com.intradevo.officiel.fortnite
+516,FGL Pro,FALSE,FALSE,15,27,com.ltp.pro.fakelocation
+517,FreshMenu,TRUE,FALSE,17,27,com.freshmenu
+518,LockScreen,TRUE,FALSE,14,19,com.s.launcher
+519,AudreyAR,TRUE,FALSE,8,18,com.HDproductions.AudreyXray
+520,RailYatri,TRUE,FALSE,14,24,com.railyatri.in.mobile
+521,com.ksmobile.launcher,FALSE,FALSE,15,21,com.ksmobile.launcher
+522,MP3 Cutter,TRUE,FALSE,9,21,mp3.cutter.ringtone.maker.trimmer
+523,Slickdeals,TRUE,FALSE,19,23,net.slickdeals.android
+524,NoxCleaner,TRUE,FALSE,19,22,com.noxgroup.app.cleaner
+525,AndroDumpper,TRUE,FALSE,16,26,com.bigos.androdumpper
+526,KPNTunnel Rev,FALSE,FALSE,14,27,kpn.soft.dev.kpnrevolution
+527,Avee Player Lite,TRUE,FALSE,16,27,com.daaw.avee.lite
+528,Gaana,FALSE,FALSE,15,26,com.gaana
+529,YT Studio,TRUE,FALSE,17,25,com.google.android.apps.youtube.creator
+530,WPS Connect,TRUE,FALSE,14,23,com.ngb.wpsconnect
+531,All Football,TRUE,FALSE,16,23,com.allfootball.news
+532,Super Cleaner,FALSE,FALSE,16,25,com.apps.go.clean.boost.master
+533,BAGT,TRUE,FALSE,19,28,jediarstudios.pubgmct
+534,livetv,TRUE,FALSE,11,23,allaa.lenet.fooor
+535,SWIFT STREAMS LIVE TV,TRUE,FALSE,14,24,com.CRISTIANORRONALDO.swifguidetstreamzap
+536,veQR,FALSE,FALSE,16,27,ve.jmtsolutiontechnologyca.veqr
+537,FlashLight,TRUE,FALSE,17,22,com.ducm.flashlight
+538,SoundCloud,FALSE,FALSE,16,27,com.soundcloud.android
+539,VPN MASTER,TRUE,FALSE,15,19,free.vpn.unblock.proxy.vpnmaster
+540,Automatic Call Recorder,TRUE,FALSE,9,25,com.appstar.callrecorder
+541,WiFi Tester,FALSE,FALSE,16,26,com.toprange.wifitester2
+546,Royal Likes,TRUE,FALSE,15,23,com.ty.royallikes
+547,Video Downloader,TRUE,FALSE,11,23,blinku.video.downloader
+548,com.lenovo.anyshare.cloneit,TRUE,FALSE,8,19,com.lenovo.anyshare.cloneit
+549,Psiphon,TRUE,FALSE,9,23,com.psiphon3
+550,Game Guardian Cheats,TRUE,FALSE,15,22,com.lakee.gameguardian
+551,Finger Print Applock,TRUE,FALSE,16,22,com.fingerprint.applock
+552,Meteor,TRUE,FALSE,19,25,com.mambela.meteor
+553,Hot xvideo x,TRUE,FALSE,14,23,com.likethat.xvideoshot
+554,Gravador De Tela,TRUE,FALSE,9,21,com.Mobile.gravadordetela
+555,4Liker,TRUE,FALSE,16,25,com.fourliker.tapp
+556,myIM3,FALSE,FALSE,14,25,com.pure.indosat.care
+557,CPU-Z,TRUE,FALSE,8,25,com.cpuid.cpu_z
+558,Facemoji Keyboard,TRUE,FALSE,15,22,com.simejikeyboard
+559,Zing MP3,FALSE,FALSE,15,27,com.zing.mp3
+560,Alan Walker Alone Mp3,TRUE,FALSE,9,18,com.AlanWalkerAloneMp3.hadidroid
+561,WPSApp,TRUE,FALSE,16,27,com.themausoft.wpsapp
+562,APK Editor,TRUE,FALSE,12,13,com.heagoo.apkeditor
+563,Studio Phone,TRUE,FALSE,14,26,com.teamtrue.myflstudiomobilefree
+564,My Horoscope,TRUE,FALSE,15,24,mappstreet.horoscope
+565,Labalabi For WhatsApp,TRUE,FALSE,14,25,labalabi.whatsapp
+566,Doze,FALSE,FALSE,14,21,com.yirgalab.dzzz
+567,Sex Game For Adults 18+,TRUE,FALSE,9,9,com.xapps.SexGameForAdults
+568,Speedtest,TRUE,FALSE,17,21,org.zwanoo.android.speedtest
+569,GT Recovery,TRUE,FALSE,8,19,mobi.bihu.recovery
+570,Fazon+,TRUE,FALSE,19,26,com.ryckmorth.fazonplus
+571,Google Text-to-speech Engine,FALSE,FALSE,19,28,com.google.android.tts
+572,SuperSU,FALSE,FALSE,9,21,eu.chainfire.supersu
+573,WiFi Master Key,TRUE,FALSE,14,17,com.halo.wifikey.wifilocating
+574,AppValley Android,TRUE,FALSE,14,24,com.appslifestyle.appvalley
+576,AIO Downloader,TRUE,FALSE,15,22,com.tusapp.aio
+577,WiFi Warden,TRUE,FALSE,14,27,com.xti.wifiwarden
+578,Social Liker,TRUE,FALSE,15,23,liker.social.a7hill.socialliker
+579,Psiphon,TRUE,FALSE,14,26,com.psiphon3.subscription
+580,GFX Tool,TRUE,FALSE,18,28,eu.tsoml.graphicssettings
+581,Clash Of Souls,TRUE,FALSE,15,22,com.version.clashs
+582,Live Net Tv 2018,TRUE,FALSE,15,25,com.relspaccdt.proapptwo
+583,Panda he.....,TRUE,FALSE,14,24,com.geo.inc.tipsforpand
+584,Fame Boom,TRUE,FALSE,16,22,fame.boom.get.followers
+585,Tubi TV,TRUE,FALSE,16,25,com.tubitv
+586,QuickShortcutMaker,TRUE,FALSE,4,19,com.sika524.android.quickshortcut
+587,SuperVPN,TRUE,FALSE,16,26,com.chengcheng.FreeVPN
+588,Thunder VPN,TRUE,FALSE,15,25,com.fast.free.unblock.thunder.vpn
+589,Lifeguard,TRUE,FALSE,16,24,mappstreet.lifeguard
+590,Cloud VPN,TRUE,FALSE,16,23,net.bypass.vpn
+591,Spyzie,TRUE,FALSE,14,25,com.spyzee
+592,AnonyTun,TRUE,FALSE,15,27,com.anonytun.android
+593,UU Booster,TRUE,FALSE,14,27,com.netease.uu
+594,com.andrewtretiakov.followers_assistant,TRUE,FALSE,15,25,com.andrewtretiakov.followers_assistant
+595,Protect,FALSE,FALSE,16,22,com.onavo.spaceship
+596,Yoga VPN,TRUE,FALSE,16,25,com.yogavpn
+597,EasyTouch,TRUE,FALSE,15,25,com.shere.easytouch
+598,lucky all games,TRUE,FALSE,14,23,com.koko1
+599,Wifi Greek WPS Unlocker,TRUE,FALSE,8,21,com.MelasGR.wifiunlocker
+600,YouTube,TRUE,FALSE,17,22,com.google.android.youtube.tv
+601,imo beta,FALSE,FALSE,14,21,com.imo.android.imoimbeta
+602,Owl Cleaner,TRUE,FALSE,16,22,com.owl.clean
+603,RAR,TRUE,FALSE,17,27,com.rarlab.rar
+604,SuperVPN,TRUE,FALSE,15,22,com.jrzheng.supervpnfree
+605,Indo Bokep Film,TRUE,FALSE,14,21,com.indobokep.film
+606,Jumia,TRUE,FALSE,19,27,com.jumia.android
+607,Duolingo,FALSE,FALSE,19,27,com.duolingo
+608,King follower and likes,TRUE,FALSE,16,19,com.kingfollowerandlikes
+609,VPN Monster,TRUE,FALSE,15,22,free.vpn.unblock.proxy.vpnmonster
+610,YouTube Go,FALSE,FALSE,16,26,com.google.android.apps.youtube.mango
+611,Music Player,TRUE,FALSE,15,17,media.music.musicplayer
+612,YIFY Browser,TRUE,FALSE,9,25,vinitm.yts
+613,Screen Dimmer 2018,TRUE,FALSE,16,22,com.screen.dimmer.nightfilter.nightmode
+614,HolaVPN,TRUE,FALSE,15,22,org.hola
+615,Nova Launcher,FALSE,FALSE,16,26,com.teslacoilsw.launcher
+616,A11yAndroidMASHExtension,FALSE,FALSE,23,26,in.amazon.mShop.android.shopping
+617,Wps Wpa Tester,TRUE,FALSE,14,27,com.tester.wpswpatester
+618,Duo,FALSE,FALSE,19,25,com.google.android.apps.tachyon
+619,Eraser,FALSE,FALSE,14,22,com.handycloset.android.eraser
+620,user,TRUE,FALSE,17,23,com.ushowmedia.mipha
+621,co.vpnmelon.free.unblock.unlimited.turbo.proxy,TRUE,FALSE,16,25,co.vpnmelon.free.unblock.unlimited.turbo.proxy
+622,WhatsGold,TRUE,FALSE,9,26,com.pluswt.gold
+623,MP3 Video Converter,TRUE,FALSE,16,25,com.fundevs.app.mediaconverter
+624,SkyVPN,TRUE,FALSE,16,18,me.skyvpn.app
+625,Tweak,TRUE,FALSE,16,25,ricko.two.support
+626,Red Tv Bx,TRUE,FALSE,15,25,co.poiny.red
+627,Wifikill Pro,TRUE,FALSE,14,21,com.wifikill.pro.nzaydnumguuaawa
+629,Appflix,FALSE,FALSE,16,27,com.ioob.appflix
+630,Plusdede,TRUE,FALSE,16,27,com.YisusStudios.Plusdede
+631,org.telegram.messenger,FALSE,FALSE,16,27,org.telegram.messenger
+632,Irotte,TRUE,FALSE,11,23,com.irood.kre.peq
+633,OLX,FALSE,FALSE,15,26,com.olx.southasia
+634,VMate,TRUE,FALSE,15,19,com.uc.vmate
+635,LotsTV 2,TRUE,FALSE,15,26,com.app.appslab.LotsTV_V2
+636,YouTube Music,TRUE,FALSE,16,25,com.google.android.apps.youtube.music
+637,Internet Speed Meter Lite,TRUE,FALSE,23,23,com.internet.speed.meter.lite
+638,SHEIN,TRUE,FALSE,17,26,com.zzkko
+639,iFont,TRUE,FALSE,14,26,com.kapp.ifont
+640,com.uc.browser.en,TRUE,FALSE,14,19,com.uc.browser.en
+642,Anime Watch,TRUE,FALSE,15,25,com.pg.kissanimenew
+643,SCViewPager,TRUE,FALSE,16,24,com.cloudmosa.puffinFree
+644,Messenger Lite,FALSE,FALSE,9,26,com.facebook.mlite
+647,get fortnite flying battle royale,TRUE,FALSE,14,22,com.bryandev.getfortniteflyingbattleroyale
+648,TV Ultimate,TRUE,FALSE,14,25,mx.tvultimate
+649,Game Guardiaan,TRUE,FALSE,16,19,apps.geme.freecoirns
+650,U-Dictionary,TRUE,FALSE,15,23,com.youdao.hindict
+651,Hi Security,FALSE,FALSE,16,24,com.ehawk.antivirus.applock.wifi
+652,lucky all games,TRUE,FALSE,14,23,com.patser.lwokay.on
+653,WEBTOON,FALSE,FALSE,16,27,com.naver.linewebtoon
+654,Shabakaty TV,TRUE,FALSE,17,27,com.shabakaty.TV
+655,KUBIK,TRUE,FALSE,16,26,com.kubik.news
+657,Hack App Data,TRUE,FALSE,12,21,com.gmail.heagoo.appdm
+658,World Free Movie,TRUE,FALSE,15,27,com.worldfreemovie4u.worldfree4u
+659,APK Editor,TRUE,FALSE,13,23,com.gmail.heagoo.apkeditor
+660,Game Tuner,FALSE,FALSE,23,27,com.samsung.android.gametuner.thin
+661,Translate,TRUE,FALSE,17,24,com.google.android.apps.translate
+662,ShareChat,FALSE,FALSE,16,26,in.mohalla.sharechat
+663,Theme Center,TRUE,FALSE,15,26,panda.keyboard.emoji.theme
+664,Development Settings,TRUE,FALSE,14,25,com.ponphy.developmentsettings
+665,Video Tube,TRUE,FALSE,14,22,com.video.tube.download
+666,Navixsport,TRUE,FALSE,16,26,com.navixsport.app
+667,NQ Mobile Vault,TRUE,FALSE,15,24,com.netqin.ps
+668,FakeGPS Free,TRUE,FALSE,14,20,com.incorporateapps.fakegps.fre
+669,Backup Service,FALSE,FALSE,11,23,com.mrecorder.callrecorder
+670,Hotspot Shield,FALSE,FALSE,16,25,hotspotshield.android.vpn
+671,Carrier Services,FALSE,FALSE,23,28,com.google.android.ims
+672,Tricks Helix Jump,TRUE,FALSE,15,26,com.tips.guidehelixjump
+673,START,TRUE,FALSE,15,22,com.gnl.roo.ase
+674,Unfollowers,TRUE,FALSE,16,17,com.detectunfollowers
+675,imo,FALSE,FALSE,14,21,com.imo.android.imoim
+676,GTA Free,TRUE,FALSE,8,23,com.pointzxpertzznew.ltdgtaoriginalcopy
+677,Real Followers,TRUE,FALSE,15,23,com.ty.followers
+678,Video HOT,TRUE,FALSE,9,14,vn.vmg.videohot
+679,Apental Calc,TRUE,FALSE,16,27,com.apental.calc
+680,JioTV,TRUE,FALSE,19,25,com.jio.jioplay.tv
+681,librtmp,FALSE,FALSE,18,26,mobisocial.arcade
+682,SHAHID,FALSE,FALSE,18,23,net.mbc.shahid
+683,FastSave,TRUE,FALSE,15,21,photo.video.instasaveapp
+684,AlnajatFRP,TRUE,FALSE,3,3,appinventor.ai_alzoubi_basel1.AlnajatFRP
+685,Tigo Shop,FALSE,FALSE,17,26,com.juvomobileinc.tigoshop.gt
+686,Home Workout,FALSE,FALSE,17,26,homeworkout.homeworkouts.noequipment
+687,Just Flashlight,TRUE,FALSE,16,27,app.mobile.justflashlight
+688,conektasdk,TRUE,FALSE,15,27,ar.com.ifood
+689,com.google.android.play.games,TRUE,FALSE,14,26,com.google.android.play.games
+690,Japp Prime,TRUE,FALSE,14,24,com.andromo.dev688927.app782905
+691,ZArchiver,TRUE,FALSE,14,22,ru.zdevs.zarchiver
+692,VPN Proxy Master,TRUE,FALSE,15,22,free.vpn.unblock.proxy.vpn.master.pro
+693,SPORTPESA APP,TRUE,FALSE,15,26,sportpesa.ahvf
+694,Root Checker Basic,TRUE,FALSE,16,25,com.joeykrim.rootcheck
+695,MyTelkomsel,TRUE,FALSE,16,23,com.telkomsel.telkomselcm
+697,HTTP INJECTOR,TRUE,FALSE,10,22,injector.htttp.tutorials.pro
+698,ADM,TRUE,FALSE,14,21,com.dv.adm
+699,Embee Meter CX,FALSE,FALSE,14,18,com.embeemobile.cx
+700,IPTV Player Latino,TRUE,FALSE,14,23,com.tvplayerlatino
+701,TvTap,TRUE,FALSE,15,26,com.livetaptv.net
+702,Master for MCPE,TRUE,FALSE,14,27,com.appblockgames.freecraftexploration
+703,Soft Keys - Home Back Button,TRUE,FALSE,16,25,com.dogusumit.ortatus
+704,Photo Editor Pro,TRUE,FALSE,16,22,com.zentertain.photoeditor
+705,Mega Filmess,TRUE,FALSE,16,26,com.mega.filmess
+706,New 2018 Keyboard,TRUE,FALSE,17,25,com.redraw.keyboard
+707,Zapya,TRUE,FALSE,15,23,com.dewmobile.kuaiya.play
+708,Flashlight,TRUE,FALSE,14,22,com.surpax.ledflashlight.panel
+709,GoEuro,TRUE,FALSE,19,27,com.goeuro.rosie
+711,Toolbox for Minecraft: PE,TRUE,FALSE,15,23,io.mrarm.mctoolbox
+712,WhatsHack for WhatsApp Messenger Prank,TRUE,FALSE,15,25,com.apps4freez.whatshack
+713,Boost Master,TRUE,FALSE,16,22,com.booster.master.cleaner.cooler
+714,Sapna Dance Videos,TRUE,FALSE,15,26,spana.choudhary.dance.video.songs
+715,Google Play Music,TRUE,FALSE,16,28,com.google.android.music
+716,AFonts,TRUE,FALSE,24,26,net.amjadroid.fontsapp
+717,Perfect Player,FALSE,FALSE,14,27,com.niklabs.pp
+719,AASHIQUI 2 all SONGS,TRUE,FALSE,15,25,com.tumhiho.AASHIQUI
+720,Japps Tube Movie,TRUE,FALSE,15,27,org.jappstube.movies.free
+721,RC9,TRUE,FALSE,19,23,com.rc9group.rc9
+722,Looper,TRUE,FALSE,14,23,com.appotica.loopr
+723,Phone Caller Screen,TRUE,FALSE,16,22,com.color.call.flash.colorphone
+724,Video Downloader,TRUE,FALSE,14,26,com.snowwhiteapps.downloader
+725,Clean Master Lite,FALSE,FALSE,14,21,com.cmcm.lite
+726,mark.via.gp,TRUE,FALSE,9,27,mark.via.gp
+727,Network Defender Speed Test free VPN,TRUE,FALSE,9,23,com.vpn.vpnanonytun_Super_VPN_Proxy
+728,XX1 Lite,TRUE,FALSE,16,26,com.xxi.movie
+729,ZBAPP,TRUE,FALSE,16,25,com.clubx.kalash
+730,com.oneapp.max.cleaner.booster,TRUE,FALSE,15,21,com.oneapp.max.cleaner.booster
+731,Lantern,TRUE,FALSE,16,27,org.getlantern.lantern
+732,Cleartrip,TRUE,FALSE,16,26,com.cleartrip.android
+733,com.ushareit.lockit,TRUE,FALSE,8,19,com.ushareit.lockit
+734,com.google.android.apps.paidtasks,TRUE,FALSE,16,23,com.google.android.apps.paidtasks
+736,MX Player,TRUE,FALSE,14,23,com.mxtech.videoplayer.ad
+737,Neutrino+,TRUE,FALSE,15,25,com.pockybop.sociali
+738,Your Freedom,TRUE,FALSE,14,26,de.resolution.yf_android
+739,Menu Button,TRUE,FALSE,16,23,jettoast.menubutton
+741,com.opera.mini.native,TRUE,FALSE,16,25,com.opera.mini.native
+742,VideoMate Video Downloader Free,TRUE,FALSE,15,26,vid.chap.videomate
+743,AppLock,FALSE,FALSE,14,19,com.domobile.applock
+744,com.lenovo.anyshare.gps,FALSE,FALSE,16,26,com.lenovo.anyshare.gps
+746,com.ksmobile.cb,FALSE,FALSE,14,17,com.ksmobile.cb
+747,Photomath,FALSE,FALSE,16,27,com.microblink.photomath
+748,ID Jovem,TRUE,FALSE,16,26,com.idjovem
+749,Poweramp,TRUE,FALSE,9,21,com.maxmpz.audioplayer
+750,App Cloner,TRUE,FALSE,15,22,com.applisto.appcloner
+751,Fynd,TRUE,FALSE,16,27,co.go.fynd
+752,Ae Dil Hai Mushkil,TRUE,FALSE,15,25,com.tumhiho.AeDilHaiMushkil
+753,Shmily Security,TRUE,FALSE,17,22,com.speed.security.free.cleaner.pri
+754,Bukalapak,TRUE,FALSE,16,27,com.bukalapak.android
+755,Video Downloader for Fb,TRUE,FALSE,14,27,fb.video.downloader
+756,dj like,TRUE,FALSE,11,23,com.djkerlike.tipsliknew
+757,ES File Explorer,TRUE,FALSE,14,22,com.estrongs.android.pop
+758,Nomao Camera,TRUE,FALSE,14,22,com.thunkable.android.farhan_anf_jan.Nomao_Xray_Camera
+759,KKGamer,TRUE,FALSE,15,22,com.studio.kkgamer
+760,Play,TRUE,FALSE,14,26,com.butacapremium.play
+761,Google Play,TRUE,FALSE,16,25,com.android.vending
+762,Movie Box,TRUE,FALSE,14,17,com.devwinbh.Movie.Show.Box
+763,ExpandableRecyclerView,FALSE,FALSE,18,27,iflix.play
+764,GO Multiple,TRUE,FALSE,15,22,com.jiubang.commerce.gomultiple
+765,KINEMASTER MOD,TRUE,FALSE,14,22,com.thunkable.android.gs27349.KINEMASTERMOD
+766,e-Doctor IPTV,TRUE,FALSE,14,26,com.edoctoriptv2
+767,Lite,FALSE,FALSE,14,21,com.facebook.lite
+768,Souq,FALSE,FALSE,15,26,com.souq.app
+769,IG Hoot,TRUE,FALSE,9,23,com.ighoot
+770,com.callerscreen.color.phone.ringtone.flash,FALSE,FALSE,16,22,com.callerscreen.color.phone.ringtone.flash
+771,Xvideos,TRUE,FALSE,15,25,com.litestore.xvideos
+772,Color Phone,TRUE,FALSE,14,22,com.colorphone.smooth.dialer
+773,Live NetTV,TRUE,FALSE,16,26,com.streams.androidnettv
+774,Dafiti,FALSE,FALSE,15,23,br.com.dafiti
+775,DualSpace,TRUE,FALSE,15,22,com.ludashi.dualspace
+777,Kingr,TRUE,FALSE,11,23,com.kingrootv1.kingtips
+778,Ed Sheeran Shape Of You Mp3,TRUE,FALSE,9,9,appinventor.ai_daniar87sumanjaya.EdSheeranShapeOfYouMp3
+779,Dictionary Provider,TRUE,FALSE,16,27,ridmik.keyboard
+780,STARZ PLAY,TRUE,FALSE,18,27,com.parsifal.starz
+781,com.alextheme.gingerbread,TRUE,FALSE,19,25,com.alextheme.gingerbread
+782,Likematic,TRUE,FALSE,15,25,com.svn.likematic
+783,WhatsAgent,TRUE,FALSE,16,25,com.wa.whatsagent
+784,Settings,FALSE,FALSE,14,22,app.vivilios.starjeanjack
+785,Google Play Books,TRUE,FALSE,16,26,com.google.android.apps.books
+786,Vortex,TRUE,FALSE,19,27,com.remotemyapp.vortex
+787,Tak-A-Trip,TRUE,FALSE,16,27,com.takatrip.android
+788,com.opera.app.news,TRUE,FALSE,16,25,com.opera.app.news
+791,Person ID Tracker,TRUE,FALSE,15,26,com.database.person.id
+792,Switch,FALSE,FALSE,14,23,com.lotusflare.globe.de
+793,Anghami,TRUE,FALSE,16,25,com.anghami
+794,FastMeet,TRUE,FALSE,15,19,com.wildec.fastmeet
+795,AnimeTV,TRUE,FALSE,16,24,com.app.assistiranimes
+796,Lucky Patcher,TRUE,FALSE,11,23,com.luckygameboostapp.luckycoopiessd
+797,Flarium,TRUE,FALSE,19,25,com.digitager.flarium
+798,Hacker game joke,TRUE,FALSE,9,20,com.apphack.hackgame.cheatgame.joke.english
+799,Mile Ho Tum Humko,TRUE,FALSE,10,22,com.indiansongs.milehotumhumko
+800,IPTV,FALSE,FALSE,15,27,ru.iptvremote.android.iptv
+805,EmulatorDetection_PlayStore1,TRUE,TRUE,8,17,de.ecspride
+806,EmulatorDetection_IMEI,TRUE,TRUE,8,19,de.ecspride
+807,SHEIN,TRUE,FALSE,17,26,com.zzkko
+808,AccuWeather,TRUE,FALSE,23,27,com.accuweather.android
+809,Info BMKG,TRUE,FALSE,19,27,com.Info_BMKG
+810,NOAA Weather Radar,TRUE,FALSE,16,25,com.apalon.weatherradar.free
+811,The Weather Channel,FALSE,FALSE,19,26,com.weather.Weather
+812,Betting Tips : VIP,TRUE,FALSE,16,26,com.bettingtips.daily
+813,Weather&Radar,TRUE,FALSE,19,27,de.wetteronline.wetterapp
+814,PDF Reader,TRUE,FALSE,14,26,pdf.reader
+815,Wun Zinn,TRUE,FALSE,16,27,com.bit.wunzin
+816,Wattpad,TRUE,FALSE,19,27,wp.wattpad
+817,Theme Doremun app,TRUE,FALSE,14,24,com.segotiwul.bluronkali
+818,Binance,FALSE,FALSE,17,28,com.binance.dev
+819,Tu Pago Mvil,TRUE,FALSE,19,25,com.unidigital.bicentenario.p2p
+822,Coinomi,FALSE,FALSE,16,25,com.coinomi.wallet
+827,Mycelium Wallet,FALSE,FALSE,19,23,com.mycelium.wallet
+828,Webull,TRUE,FALSE,16,26,org.dayup.stocks
+829,Ada,FALSE,FALSE,19,26,com.ada.app
+830,My Heart,TRUE,FALSE,16,27,com.szyk.myheart
+831,com.chat.century.data.fire,TRUE,FALSE,19,26,com.chat.century.data.fire
+832,GiveBlood,TRUE,FALSE,17,27,ca.blood.giveblood
+833,com.librelink.app,TRUE,FALSE,18,22,com.librelink.app
+834,mfine,FALSE,FALSE,16,23,com.mfine
+835,Mobile JKN,TRUE,FALSE,15,27,app.bpjs.mobile
+836,Concise Medical,FALSE,FALSE,16,26,com.mobisystems.msdict.embedded.wireless.oxford.concisemedical
+841,Cloud Print,TRUE,FALSE,16,24,com.google.android.apps.cloudprint
+844,Status Downloader for Whatsapp,TRUE,FALSE,15,26,com.downlood.sav.whmedia
+845,MediaFire,TRUE,FALSE,16,25,com.mediafire.android
+846,Kika Keyboard,TRUE,FALSE,16,24,com.qisiemoji.inputmethod
+847,Keep,TRUE,FALSE,16,26,com.google.android.keep
+852,Smash it! - Kahoot,TRUE,FALSE,19,25,tk.smashr.kahootsmasher
+853,Spyboy,TRUE,FALSE,16,26,info.androidhive.spyboy
+854,Multi Calculator,TRUE,FALSE,16,21,multi.function.scientific.calculate.photomath.calculator
+855,Free Dating App & Flirt Chat,TRUE,FALSE,14,26,dating.app.chat.flirt.wgbcv
+856,CpuX,TRUE,FALSE,16,28,com.mobilesftware.cpux
+857,Hotspot Shield,FALSE,FALSE,16,27,hotspotshield.android.vpn
+858,Thunder VPN,TRUE,FALSE,15,25,com.fast.free.unblock.thunder.vpn
+859,Zapya,TRUE,FALSE,16,26,com.dewmobile.kuaiya.play
+862,MCPE Master,TRUE,FALSE,15,19,com.groundhog.mcpemaster
+863,Clothes Scanner,TRUE,FALSE,14,26,com.pUreech.merry.christmas.frame
+864,ApkCustom,TRUE,FALSE,14,25,team.dev.epro.apkcustom
+865,Job Search,TRUE,FALSE,16,23,com.indeed.android.jobsearch
+866,MSA FRP,TRUE,FALSE,14,25,com.appswiz.msafrpidiib
+867,Money SMS,FALSE,FALSE,9,25,com.milos.design
+868,Klik Bonus,TRUE,FALSE,15,25,com.grahawarta.bonusharian
+869,NQ Mobile Vault,TRUE,FALSE,15,24,com.netqin.ps
+870,MYDAWA,TRUE,FALSE,17,27,com.mydawa.MyDawa
+871,Weather & Clock Widget,TRUE,FALSE,15,27,com.devexpert.weather
+872,Where is my Train,TRUE,FALSE,15,25,com.whereismytrain.android
+875,Conductor,TRUE,FALSE,16,25,pe.taxibeat.driver
+876,TED,FALSE,FALSE,16,27,com.ted.android
+878,Lite,FALSE,FALSE,14,26,com.facebook.lite
+882,Famestar,TRUE,FALSE,15,26,com.famestar.getfollowers
